@@ -1,0 +1,228 @@
+{
+  "fixture": "plugins/bootswrapper.txt",
+  "tokens": [
+    {
+      "from": 0,
+      "to": 12,
+      "text": "~~CLEARFIX~~",
+      "styles": "meta"
+    },
+    {
+      "from": 12,
+      "to": 13,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 13,
+      "to": 26,
+      "text": "~~PAGEBREAK~~",
+      "styles": "meta"
+    },
+    {
+      "from": 27,
+      "to": 32,
+      "text": "<grid",
+      "styles": "tag"
+    },
+    {
+      "from": 32,
+      "to": 33,
+      "text": " ",
+      "styles": "attribute"
+    },
+    {
+      "from": 33,
+      "to": 34,
+      "text": "c",
+      "styles": "attribute"
+    },
+    {
+      "from": 34,
+      "to": 35,
+      "text": "l",
+      "styles": "attribute"
+    },
+    {
+      "from": 35,
+      "to": 36,
+      "text": "a",
+      "styles": "attribute"
+    },
+    {
+      "from": 36,
+      "to": 37,
+      "text": "s",
+      "styles": "attribute"
+    },
+    {
+      "from": 37,
+      "to": 38,
+      "text": "s",
+      "styles": "attribute"
+    },
+    {
+      "from": 38,
+      "to": 39,
+      "text": "=",
+      "styles": "operator"
+    },
+    {
+      "from": 39,
+      "to": 45,
+      "text": "\"wide\"",
+      "styles": "string"
+    },
+    {
+      "from": 45,
+      "to": 46,
+      "text": " ",
+      "styles": "attribute"
+    },
+    {
+      "from": 46,
+      "to": 47,
+      "text": "d",
+      "styles": "attribute"
+    },
+    {
+      "from": 47,
+      "to": 48,
+      "text": "a",
+      "styles": "attribute"
+    },
+    {
+      "from": 48,
+      "to": 49,
+      "text": "t",
+      "styles": "attribute"
+    },
+    {
+      "from": 49,
+      "to": 50,
+      "text": "a",
+      "styles": "attribute"
+    },
+    {
+      "from": 50,
+      "to": 51,
+      "text": "-",
+      "styles": "attribute"
+    },
+    {
+      "from": 51,
+      "to": 52,
+      "text": "l",
+      "styles": "attribute"
+    },
+    {
+      "from": 52,
+      "to": 53,
+      "text": "a",
+      "styles": "attribute"
+    },
+    {
+      "from": 53,
+      "to": 54,
+      "text": "y",
+      "styles": "attribute"
+    },
+    {
+      "from": 54,
+      "to": 55,
+      "text": "o",
+      "styles": "attribute"
+    },
+    {
+      "from": 55,
+      "to": 56,
+      "text": "u",
+      "styles": "attribute"
+    },
+    {
+      "from": 56,
+      "to": 57,
+      "text": "t",
+      "styles": "attribute"
+    },
+    {
+      "from": 57,
+      "to": 58,
+      "text": "=",
+      "styles": "operator"
+    },
+    {
+      "from": 58,
+      "to": 65,
+      "text": "\"fluid\"",
+      "styles": "string"
+    },
+    {
+      "from": 65,
+      "to": 66,
+      "text": ">",
+      "styles": "tag"
+    },
+    {
+      "from": 66,
+      "to": 68,
+      "text": "**",
+      "styles": "strong"
+    },
+    {
+      "from": 68,
+      "to": 69,
+      "text": "내",
+      "styles": "strong"
+    },
+    {
+      "from": 69,
+      "to": 70,
+      "text": "용",
+      "styles": "strong"
+    },
+    {
+      "from": 70,
+      "to": 72,
+      "text": "**",
+      "styles": "strong"
+    },
+    {
+      "from": 72,
+      "to": 73,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 73,
+      "to": 77,
+      "text": "<row",
+      "styles": "tag"
+    },
+    {
+      "from": 77,
+      "to": 78,
+      "text": ">",
+      "styles": "tag"
+    },
+    {
+      "from": 78,
+      "to": 79,
+      "text": "행",
+      "styles": null
+    },
+    {
+      "from": 79,
+      "to": 85,
+      "text": "</row>",
+      "styles": "tag"
+    },
+    {
+      "from": 85,
+      "to": 92,
+      "text": "</grid>",
+      "styles": "tag"
+    }
+  ],
+  "version": 1
+}

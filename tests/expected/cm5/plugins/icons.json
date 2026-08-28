@@ -1,0 +1,138 @@
+{
+  "fixture": "plugins/icons.txt",
+  "tokens": [
+    {
+      "from": 0,
+      "to": 5,
+      "text": "{{fa>",
+      "styles": "tag"
+    },
+    {
+      "from": 5,
+      "to": 6,
+      "text": "h",
+      "styles": "link"
+    },
+    {
+      "from": 6,
+      "to": 7,
+      "text": "o",
+      "styles": "link"
+    },
+    {
+      "from": 7,
+      "to": 8,
+      "text": "m",
+      "styles": "link"
+    },
+    {
+      "from": 8,
+      "to": 9,
+      "text": "e",
+      "styles": "link"
+    },
+    {
+      "from": 9,
+      "to": 10,
+      "text": "?",
+      "styles": "operator"
+    },
+    {
+      "from": 10,
+      "to": 11,
+      "text": "2",
+      "styles": "keyword"
+    },
+    {
+      "from": 11,
+      "to": 12,
+      "text": "x",
+      "styles": "keyword"
+    },
+    {
+      "from": 12,
+      "to": 14,
+      "text": "}}",
+      "styles": "tag"
+    },
+    {
+      "from": 15,
+      "to": 27,
+      "text": "{{glyphicon>",
+      "styles": "tag"
+    },
+    {
+      "from": 27,
+      "to": 28,
+      "text": "s",
+      "styles": "link"
+    },
+    {
+      "from": 28,
+      "to": 29,
+      "text": "t",
+      "styles": "link"
+    },
+    {
+      "from": 29,
+      "to": 30,
+      "text": "a",
+      "styles": "link"
+    },
+    {
+      "from": 30,
+      "to": 31,
+      "text": "r",
+      "styles": "link"
+    },
+    {
+      "from": 31,
+      "to": 32,
+      "text": "&",
+      "styles": "operator"
+    },
+    {
+      "from": 32,
+      "to": 33,
+      "text": "s",
+      "styles": "keyword"
+    },
+    {
+      "from": 33,
+      "to": 34,
+      "text": "p",
+      "styles": "keyword"
+    },
+    {
+      "from": 34,
+      "to": 35,
+      "text": "i",
+      "styles": "keyword"
+    },
+    {
+      "from": 35,
+      "to": 36,
+      "text": "n",
+      "styles": "keyword"
+    },
+    {
+      "from": 36,
+      "to": 37,
+      "text": "=",
+      "styles": "keyword"
+    },
+    {
+      "from": 37,
+      "to": 38,
+      "text": "1",
+      "styles": "keyword"
+    },
+    {
+      "from": 38,
+      "to": 40,
+      "text": "}}",
+      "styles": "tag"
+    }
+  ],
+  "version": 1
+}

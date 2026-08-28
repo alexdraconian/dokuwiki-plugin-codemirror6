@@ -1,0 +1,17 @@
+CodeMirror 6 Plugin for DokuWiki
+===============================
+
+Copyright (C) 2026 AlexDraconian.
+
+This project is a substantially modified work based on the DokuWiki
+CodeMirror plugin by Albert Gasset and contributors:
+
+https://github.com/albertgasset/dokuwiki-plugin-codemirror
+
+The CodeMirror 5 implementation was migrated to CodeMirror 6 and the
+integration, parser, language loading, settings, and build system were
+substantially changed. This project is distributed under the GNU General
+Public License, version 2 or later. See LICENSE for the complete terms.
+
+The production bundles include separately licensed third-party packages.
+Their notices and license texts are in THIRD_PARTY_NOTICES.txt.

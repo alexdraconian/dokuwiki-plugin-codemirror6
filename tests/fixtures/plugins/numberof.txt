@@ -1,0 +1,2 @@
+{{NUMBEROFPAGES}}
+{{NUMBEROFMEDIAS>media namespace}}

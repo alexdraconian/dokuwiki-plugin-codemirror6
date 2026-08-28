@@ -1,0 +1,4 @@
+{{page>foo&param=value}}
+{{section>bar}}
+{{namespace>docs}}
+{{tagtopic>topic&sort= date}}

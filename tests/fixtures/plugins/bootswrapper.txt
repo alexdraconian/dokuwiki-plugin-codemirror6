@@ -1,0 +1,2 @@
+~~CLEARFIX~~ ~~PAGEBREAK~~
+<grid class="wide" data-layout="fluid">**내용** <row>행</row></grid>

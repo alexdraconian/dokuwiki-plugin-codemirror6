@@ -1,0 +1,60 @@
+{
+  "fixture": "plugins/randompage2.txt",
+  "tokens": [
+    {
+      "from": 0,
+      "to": 17,
+      "text": "<randompage_link>",
+      "styles": "tag"
+    },
+    {
+      "from": 17,
+      "to": 18,
+      "text": "임",
+      "styles": null
+    },
+    {
+      "from": 18,
+      "to": 19,
+      "text": "의",
+      "styles": null
+    },
+    {
+      "from": 19,
+      "to": 20,
+      "text": "의",
+      "styles": null
+    },
+    {
+      "from": 20,
+      "to": 21,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 21,
+      "to": 22,
+      "text": "페",
+      "styles": null
+    },
+    {
+      "from": 22,
+      "to": 23,
+      "text": "이",
+      "styles": null
+    },
+    {
+      "from": 23,
+      "to": 24,
+      "text": "지",
+      "styles": null
+    },
+    {
+      "from": 24,
+      "to": 42,
+      "text": "</randompage_link>",
+      "styles": "tag"
+    }
+  ],
+  "version": 1
+}

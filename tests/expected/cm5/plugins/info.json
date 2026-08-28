@@ -1,0 +1,108 @@
+{
+  "fixture": "plugins/info.txt",
+  "tokens": [
+    {
+      "from": 0,
+      "to": 7,
+      "text": "~~INFO:",
+      "styles": "meta"
+    },
+    {
+      "from": 7,
+      "to": 20,
+      "text": "syntaxplugins",
+      "styles": "keyword"
+    },
+    {
+      "from": 20,
+      "to": 22,
+      "text": "~~",
+      "styles": "meta"
+    },
+    {
+      "from": 23,
+      "to": 30,
+      "text": "~~INFO:",
+      "styles": "meta"
+    },
+    {
+      "from": 30,
+      "to": 38,
+      "text": "datetime",
+      "styles": "keyword"
+    },
+    {
+      "from": 38,
+      "to": 40,
+      "text": "~~",
+      "styles": "meta"
+    },
+    {
+      "from": 41,
+      "to": 48,
+      "text": "~~INFO:",
+      "styles": "meta"
+    },
+    {
+      "from": 48,
+      "to": 49,
+      "text": "n",
+      "styles": "error"
+    },
+    {
+      "from": 49,
+      "to": 50,
+      "text": "o",
+      "styles": "error"
+    },
+    {
+      "from": 50,
+      "to": 51,
+      "text": "t",
+      "styles": "error"
+    },
+    {
+      "from": 51,
+      "to": 52,
+      "text": "-",
+      "styles": "error"
+    },
+    {
+      "from": 52,
+      "to": 53,
+      "text": "a",
+      "styles": "error"
+    },
+    {
+      "from": 53,
+      "to": 54,
+      "text": "-",
+      "styles": "error"
+    },
+    {
+      "from": 54,
+      "to": 55,
+      "text": "k",
+      "styles": "error"
+    },
+    {
+      "from": 55,
+      "to": 56,
+      "text": "e",
+      "styles": "error"
+    },
+    {
+      "from": 56,
+      "to": 57,
+      "text": "y",
+      "styles": "error"
+    },
+    {
+      "from": 57,
+      "to": 59,
+      "text": "~~",
+      "styles": "meta"
+    }
+  ],
+  "version": 1
+}

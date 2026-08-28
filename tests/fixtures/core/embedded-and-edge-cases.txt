@@ -1,0 +1,17 @@
+<code javascript demo.js>
+const message = "한글 😀";
+</code>
+<file python>
+print("끝")
+</file>
+<code unknown>
+알 수 없는 언어도 평문 경계를 유지한다.
+</code>
+<php>$value = 1;</php>
+<PHP>$value = 2;</PHP>
+<html><b>html</b></html>
+<HTML><b>HTML</b></HTML>
+빈 문법과 미완성은 그대로 처리한다: **열린 문법
+이모지 😀를 포함한 긴 행 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+<code javascript
+닫히지 않은 코드 블록

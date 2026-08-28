@@ -1,0 +1,144 @@
+{
+  "fixture": "plugins/orphanswanted.txt",
+  "tokens": [
+    {
+      "from": 0,
+      "to": 16,
+      "text": "~~ORPHANSWANTED:",
+      "styles": "meta"
+    },
+    {
+      "from": 16,
+      "to": 21,
+      "text": "valid",
+      "styles": "keyword"
+    },
+    {
+      "from": 21,
+      "to": 23,
+      "text": "~~",
+      "styles": "meta"
+    },
+    {
+      "from": 24,
+      "to": 40,
+      "text": "~~ORPHANSWANTED:",
+      "styles": "meta"
+    },
+    {
+      "from": 40,
+      "to": 43,
+      "text": "all",
+      "styles": "keyword"
+    },
+    {
+      "from": 43,
+      "to": 44,
+      "text": "!",
+      "styles": null
+    },
+    {
+      "from": 44,
+      "to": 45,
+      "text": "p",
+      "styles": "string"
+    },
+    {
+      "from": 45,
+      "to": 46,
+      "text": "a",
+      "styles": "string"
+    },
+    {
+      "from": 46,
+      "to": 47,
+      "text": "g",
+      "styles": "string"
+    },
+    {
+      "from": 47,
+      "to": 48,
+      "text": "e",
+      "styles": "string"
+    },
+    {
+      "from": 48,
+      "to": 49,
+      "text": ":",
+      "styles": "string"
+    },
+    {
+      "from": 49,
+      "to": 50,
+      "text": "o",
+      "styles": "string"
+    },
+    {
+      "from": 50,
+      "to": 51,
+      "text": "r",
+      "styles": "string"
+    },
+    {
+      "from": 51,
+      "to": 52,
+      "text": "p",
+      "styles": "string"
+    },
+    {
+      "from": 52,
+      "to": 53,
+      "text": "h",
+      "styles": "string"
+    },
+    {
+      "from": 53,
+      "to": 54,
+      "text": "a",
+      "styles": "string"
+    },
+    {
+      "from": 54,
+      "to": 55,
+      "text": "n",
+      "styles": "string"
+    },
+    {
+      "from": 55,
+      "to": 57,
+      "text": "~~",
+      "styles": "meta"
+    },
+    {
+      "from": 58,
+      "to": 74,
+      "text": "~~ORPHANSWANTED:",
+      "styles": "meta"
+    },
+    {
+      "from": 74,
+      "to": 75,
+      "text": "i",
+      "styles": "error"
+    },
+    {
+      "from": 75,
+      "to": 76,
+      "text": "n",
+      "styles": "error"
+    },
+    {
+      "from": 76,
+      "to": 81,
+      "text": "valid",
+      "styles": "keyword"
+    },
+    {
+      "from": 81,
+      "to": 83,
+      "text": "~~",
+      "styles": "meta"
+    }
+  ],
+  "version": 1
+}

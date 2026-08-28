@@ -1,0 +1,222 @@
+{
+  "fixture": "plugins/struct.txt",
+  "tokens": [
+    {
+      "from": 0,
+      "to": 22,
+      "text": "---- struct table ----",
+      "styles": "def"
+    },
+    {
+      "from": 23,
+      "to": 29,
+      "text": "schema",
+      "styles": "def"
+    },
+    {
+      "from": 29,
+      "to": 30,
+      "text": ":",
+      "styles": null
+    },
+    {
+      "from": 30,
+      "to": 31,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 31,
+      "to": 32,
+      "text": "p",
+      "styles": null
+    },
+    {
+      "from": 32,
+      "to": 33,
+      "text": "e",
+      "styles": null
+    },
+    {
+      "from": 33,
+      "to": 34,
+      "text": "o",
+      "styles": null
+    },
+    {
+      "from": 34,
+      "to": 35,
+      "text": "p",
+      "styles": null
+    },
+    {
+      "from": 35,
+      "to": 36,
+      "text": "l",
+      "styles": null
+    },
+    {
+      "from": 36,
+      "to": 37,
+      "text": "e",
+      "styles": null
+    },
+    {
+      "from": 38,
+      "to": 42,
+      "text": "cols",
+      "styles": "def"
+    },
+    {
+      "from": 42,
+      "to": 43,
+      "text": ":",
+      "styles": null
+    },
+    {
+      "from": 43,
+      "to": 44,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 44,
+      "to": 52,
+      "text": "%pageid%",
+      "styles": "keyword"
+    },
+    {
+      "from": 52,
+      "to": 53,
+      "text": ",",
+      "styles": null
+    },
+    {
+      "from": 53,
+      "to": 54,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 54,
+      "to": 61,
+      "text": "%title%",
+      "styles": "keyword"
+    },
+    {
+      "from": 62,
+      "to": 69,
+      "text": "unknown",
+      "styles": "error"
+    },
+    {
+      "from": 69,
+      "to": 70,
+      "text": ":",
+      "styles": null
+    },
+    {
+      "from": 70,
+      "to": 71,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 71,
+      "to": 72,
+      "text": "b",
+      "styles": null
+    },
+    {
+      "from": 72,
+      "to": 73,
+      "text": "a",
+      "styles": null
+    },
+    {
+      "from": 73,
+      "to": 74,
+      "text": "d",
+      "styles": null
+    },
+    {
+      "from": 75,
+      "to": 87,
+      "text": "%lastupdate%",
+      "styles": "keyword"
+    },
+    {
+      "from": 87,
+      "to": 88,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 88,
+      "to": 89,
+      "text": "{",
+      "styles": null
+    },
+    {
+      "from": 89,
+      "to": 90,
+      "text": "{",
+      "styles": null
+    },
+    {
+      "from": 90,
+      "to": 91,
+      "text": "$",
+      "styles": null
+    },
+    {
+      "from": 91,
+      "to": 92,
+      "text": "v",
+      "styles": null
+    },
+    {
+      "from": 92,
+      "to": 93,
+      "text": "a",
+      "styles": null
+    },
+    {
+      "from": 93,
+      "to": 94,
+      "text": "l",
+      "styles": null
+    },
+    {
+      "from": 94,
+      "to": 95,
+      "text": "u",
+      "styles": null
+    },
+    {
+      "from": 95,
+      "to": 96,
+      "text": "e",
+      "styles": null
+    },
+    {
+      "from": 96,
+      "to": 97,
+      "text": "}",
+      "styles": null
+    },
+    {
+      "from": 97,
+      "to": 98,
+      "text": "}",
+      "styles": null
+    },
+    {
+      "from": 99,
+      "to": 103,
+      "text": "----",
+      "styles": "def"
+    }
+  ],
+  "version": 1
+}

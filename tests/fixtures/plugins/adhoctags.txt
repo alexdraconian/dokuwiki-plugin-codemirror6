@@ -1,0 +1,2 @@
+<div class="box" [data-kind=value]>내용 <span title="중첩">중첩</span></div>
+<strong>태그</strong>

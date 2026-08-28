@@ -1,0 +1,300 @@
+{
+  "fixture": "plugins/adhoctags.txt",
+  "tokens": [
+    {
+      "from": 0,
+      "to": 4,
+      "text": "<div",
+      "styles": "tag"
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "text": " ",
+      "styles": "attribute"
+    },
+    {
+      "from": 5,
+      "to": 6,
+      "text": "c",
+      "styles": "attribute"
+    },
+    {
+      "from": 6,
+      "to": 7,
+      "text": "l",
+      "styles": "attribute"
+    },
+    {
+      "from": 7,
+      "to": 8,
+      "text": "a",
+      "styles": "attribute"
+    },
+    {
+      "from": 8,
+      "to": 9,
+      "text": "s",
+      "styles": "attribute"
+    },
+    {
+      "from": 9,
+      "to": 10,
+      "text": "s",
+      "styles": "attribute"
+    },
+    {
+      "from": 10,
+      "to": 11,
+      "text": "=",
+      "styles": "attribute"
+    },
+    {
+      "from": 11,
+      "to": 12,
+      "text": "\"",
+      "styles": "attribute"
+    },
+    {
+      "from": 12,
+      "to": 13,
+      "text": "b",
+      "styles": "attribute"
+    },
+    {
+      "from": 13,
+      "to": 14,
+      "text": "o",
+      "styles": "attribute"
+    },
+    {
+      "from": 14,
+      "to": 15,
+      "text": "x",
+      "styles": "attribute"
+    },
+    {
+      "from": 15,
+      "to": 16,
+      "text": "\"",
+      "styles": "attribute"
+    },
+    {
+      "from": 16,
+      "to": 17,
+      "text": " ",
+      "styles": "attribute"
+    },
+    {
+      "from": 17,
+      "to": 18,
+      "text": "[",
+      "styles": "bracket"
+    },
+    {
+      "from": 18,
+      "to": 27,
+      "text": "data-kind",
+      "styles": "attribute"
+    },
+    {
+      "from": 27,
+      "to": 28,
+      "text": "=",
+      "styles": "operator"
+    },
+    {
+      "from": 28,
+      "to": 29,
+      "text": "v",
+      "styles": "string"
+    },
+    {
+      "from": 29,
+      "to": 30,
+      "text": "a",
+      "styles": "string"
+    },
+    {
+      "from": 30,
+      "to": 31,
+      "text": "l",
+      "styles": "string"
+    },
+    {
+      "from": 31,
+      "to": 32,
+      "text": "u",
+      "styles": "string"
+    },
+    {
+      "from": 32,
+      "to": 33,
+      "text": "e",
+      "styles": "string"
+    },
+    {
+      "from": 33,
+      "to": 34,
+      "text": "]",
+      "styles": "bracket"
+    },
+    {
+      "from": 34,
+      "to": 35,
+      "text": ">",
+      "styles": "tag"
+    },
+    {
+      "from": 35,
+      "to": 36,
+      "text": "내",
+      "styles": null
+    },
+    {
+      "from": 36,
+      "to": 37,
+      "text": "용",
+      "styles": null
+    },
+    {
+      "from": 37,
+      "to": 38,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 38,
+      "to": 43,
+      "text": "<span",
+      "styles": "tag"
+    },
+    {
+      "from": 43,
+      "to": 44,
+      "text": " ",
+      "styles": "attribute"
+    },
+    {
+      "from": 44,
+      "to": 45,
+      "text": "t",
+      "styles": "attribute"
+    },
+    {
+      "from": 45,
+      "to": 46,
+      "text": "i",
+      "styles": "attribute"
+    },
+    {
+      "from": 46,
+      "to": 47,
+      "text": "t",
+      "styles": "attribute"
+    },
+    {
+      "from": 47,
+      "to": 48,
+      "text": "l",
+      "styles": "attribute"
+    },
+    {
+      "from": 48,
+      "to": 49,
+      "text": "e",
+      "styles": "attribute"
+    },
+    {
+      "from": 49,
+      "to": 50,
+      "text": "=",
+      "styles": "attribute"
+    },
+    {
+      "from": 50,
+      "to": 51,
+      "text": "\"",
+      "styles": "attribute"
+    },
+    {
+      "from": 51,
+      "to": 52,
+      "text": "중",
+      "styles": "attribute"
+    },
+    {
+      "from": 52,
+      "to": 53,
+      "text": "첩",
+      "styles": "attribute"
+    },
+    {
+      "from": 53,
+      "to": 54,
+      "text": "\"",
+      "styles": "attribute"
+    },
+    {
+      "from": 54,
+      "to": 55,
+      "text": ">",
+      "styles": "tag"
+    },
+    {
+      "from": 55,
+      "to": 56,
+      "text": "중",
+      "styles": null
+    },
+    {
+      "from": 56,
+      "to": 57,
+      "text": "첩",
+      "styles": null
+    },
+    {
+      "from": 57,
+      "to": 64,
+      "text": "</span>",
+      "styles": "tag"
+    },
+    {
+      "from": 64,
+      "to": 70,
+      "text": "</div>",
+      "styles": "tag"
+    },
+    {
+      "from": 71,
+      "to": 78,
+      "text": "<strong",
+      "styles": "tag"
+    },
+    {
+      "from": 78,
+      "to": 79,
+      "text": ">",
+      "styles": "tag"
+    },
+    {
+      "from": 79,
+      "to": 80,
+      "text": "태",
+      "styles": null
+    },
+    {
+      "from": 80,
+      "to": 81,
+      "text": "그",
+      "styles": null
+    },
+    {
+      "from": 81,
+      "to": 90,
+      "text": "</strong>",
+      "styles": "tag"
+    }
+  ],
+  "version": 1
+}

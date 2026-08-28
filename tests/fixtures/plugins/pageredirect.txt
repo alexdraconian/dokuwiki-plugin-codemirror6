@@ -1,0 +1,3 @@
+~~REDIRECT>pages:start~~
+#REDIRECT pages:target
+#redirect lower-case-target

@@ -1,0 +1,17 @@
+<?php
+
+/**
+ * @license    GPL 2 (http://www.gnu.org/licenses/gpl.html)
+ *
+ * @author F. Mueller-Donath <j.felix@mueller-donath.de>
+ */
+$lang['js']['setting_activeline'] = 'Aktuelle Zeile hervorheben';
+$lang['js']['setting_closebrackets'] = 'Klammern automatisch schließen';
+$lang['js']['setting_fontsize'] = 'Schriftgröße';
+$lang['js']['setting_keymap']  = 'Tastenzuordnung';
+$lang['js']['setting_linenumbers'] = 'Zeige Zeilennummern';
+$lang['js']['setting_matchbrackets'] = 'passende Klammern hervorheben';
+$lang['js']['setting_nativeeditor'] = 'Original DokuWiki Editor';
+$lang['js']['setting_syntax']  = 'Syntax hervorheben';
+$lang['js']['setting_theme']   = 'Farbschema';
+$lang['js']['setting_showinvisibles'] = 'Leerzeichen anzeigen';

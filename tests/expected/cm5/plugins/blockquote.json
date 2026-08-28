@@ -1,0 +1,162 @@
+{
+  "fixture": "plugins/blockquote.txt",
+  "tokens": [
+    {
+      "from": 0,
+      "to": 6,
+      "text": "<cite>",
+      "styles": "tag"
+    },
+    {
+      "from": 6,
+      "to": 7,
+      "text": "출",
+      "styles": null
+    },
+    {
+      "from": 7,
+      "to": 8,
+      "text": "처",
+      "styles": null
+    },
+    {
+      "from": 8,
+      "to": 15,
+      "text": "</cite>",
+      "styles": "tag"
+    },
+    {
+      "from": 16,
+      "to": 28,
+      "text": "<blockquote>",
+      "styles": "tag"
+    },
+    {
+      "from": 28,
+      "to": 29,
+      "text": "인",
+      "styles": null
+    },
+    {
+      "from": 29,
+      "to": 30,
+      "text": "용",
+      "styles": null
+    },
+    {
+      "from": 30,
+      "to": 31,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 31,
+      "to": 33,
+      "text": "**",
+      "styles": "strong"
+    },
+    {
+      "from": 33,
+      "to": 34,
+      "text": "문",
+      "styles": "strong"
+    },
+    {
+      "from": 34,
+      "to": 35,
+      "text": "장",
+      "styles": "strong"
+    },
+    {
+      "from": 35,
+      "to": 37,
+      "text": "**",
+      "styles": "strong"
+    },
+    {
+      "from": 37,
+      "to": 50,
+      "text": "</blockquote>",
+      "styles": "tag"
+    },
+    {
+      "from": 51,
+      "to": 63,
+      "text": "<blockquote>",
+      "styles": "tag"
+    },
+    {
+      "from": 63,
+      "to": 75,
+      "text": "<blockquote>",
+      "styles": "tag"
+    },
+    {
+      "from": 75,
+      "to": 76,
+      "text": "중",
+      "styles": null
+    },
+    {
+      "from": 76,
+      "to": 77,
+      "text": "첩",
+      "styles": null
+    },
+    {
+      "from": 77,
+      "to": 90,
+      "text": "</blockquote>",
+      "styles": "tag"
+    },
+    {
+      "from": 90,
+      "to": 103,
+      "text": "</blockquote>",
+      "styles": "tag"
+    },
+    {
+      "from": 104,
+      "to": 107,
+      "text": "<q>",
+      "styles": "tag"
+    },
+    {
+      "from": 107,
+      "to": 108,
+      "text": "짧",
+      "styles": null
+    },
+    {
+      "from": 108,
+      "to": 109,
+      "text": "은",
+      "styles": null
+    },
+    {
+      "from": 109,
+      "to": 110,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 110,
+      "to": 111,
+      "text": "인",
+      "styles": null
+    },
+    {
+      "from": 111,
+      "to": 112,
+      "text": "용",
+      "styles": null
+    },
+    {
+      "from": 112,
+      "to": 116,
+      "text": "</q>",
+      "styles": "tag"
+    }
+  ],
+  "version": 1
+}

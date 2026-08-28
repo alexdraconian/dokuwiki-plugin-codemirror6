@@ -1,0 +1,2 @@
+<math>x^2 + y^2</math>
+<MATH>\\frac{1}{2}</MATH>

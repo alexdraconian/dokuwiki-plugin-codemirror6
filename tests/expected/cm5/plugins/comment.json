@@ -1,0 +1,108 @@
+{
+  "fixture": "plugins/comment.txt",
+  "tokens": [
+    {
+      "from": 0,
+      "to": 2,
+      "text": "/*",
+      "styles": "comment"
+    },
+    {
+      "from": 2,
+      "to": 3,
+      "text": " ",
+      "styles": "comment"
+    },
+    {
+      "from": 3,
+      "to": 4,
+      "text": "h",
+      "styles": "comment"
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "text": "i",
+      "styles": "comment"
+    },
+    {
+      "from": 5,
+      "to": 6,
+      "text": "d",
+      "styles": "comment"
+    },
+    {
+      "from": 6,
+      "to": 7,
+      "text": "d",
+      "styles": "comment"
+    },
+    {
+      "from": 7,
+      "to": 8,
+      "text": "e",
+      "styles": "comment"
+    },
+    {
+      "from": 8,
+      "to": 9,
+      "text": "n",
+      "styles": "comment"
+    },
+    {
+      "from": 9,
+      "to": 10,
+      "text": " ",
+      "styles": "comment"
+    },
+    {
+      "from": 10,
+      "to": 11,
+      "text": "*",
+      "styles": "comment"
+    },
+    {
+      "from": 11,
+      "to": 12,
+      "text": "*",
+      "styles": "comment"
+    },
+    {
+      "from": 12,
+      "to": 13,
+      "text": "문",
+      "styles": "comment"
+    },
+    {
+      "from": 13,
+      "to": 14,
+      "text": "법",
+      "styles": "comment"
+    },
+    {
+      "from": 14,
+      "to": 15,
+      "text": "*",
+      "styles": "comment"
+    },
+    {
+      "from": 15,
+      "to": 16,
+      "text": "*",
+      "styles": "comment"
+    },
+    {
+      "from": 16,
+      "to": 17,
+      "text": " ",
+      "styles": "comment"
+    },
+    {
+      "from": 17,
+      "to": 19,
+      "text": "*/",
+      "styles": "comment"
+    }
+  ],
+  "version": 1
+}

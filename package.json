@@ -1,0 +1,48 @@
+{
+  "devDependencies": {
+    "@codemirror/autocomplete": "6.20.3",
+    "@codemirror/commands": "6.11.0",
+    "@codemirror/lang-css": "6.3.1",
+    "@codemirror/lang-javascript": "6.2.5",
+    "@codemirror/lang-php": "6.0.2",
+    "@codemirror/lang-python": "6.2.1",
+    "@codemirror/lang-sql": "6.10.0",
+    "@codemirror/lang-xml": "6.1.0",
+    "@codemirror/language": "6.12.4",
+    "@codemirror/legacy-modes": "6.5.3",
+    "@codemirror/search": "6.7.0",
+    "@codemirror/state": "6.7.1",
+    "@codemirror/view": "6.43.9",
+    "@lezer/highlight": "1.2.3",
+    "@replit/codemirror-vim": "6.4.0",
+    "esbuild": "0.28.2",
+    "jsdom": "^26.1.0",
+    "less": "4.9.0",
+    "typescript": "7.0.2"
+  },
+  "scripts": {
+    "build": "npm run typecheck && node scripts/build.mjs",
+    "dev": "node scripts/build.mjs --watch",
+    "dist": "npm run build && npm run notices && node scripts/package.mjs",
+    "lint": "npm run typecheck && node scripts/lint.mjs",
+    "test": "npm run test:cm5 && npm run test:toolchain && node tests/cm6-parity.js && node tests/cm6-editor.js && node tests/cm6-search.js && node tests/cm6-bridge.js && node tests/cm6-styles.js && node tests/cm6-phase-12-13.js && node tests/cm6-page-completion.js && node tests/embedded-language-spike.js && node tests/embedded-language-registry.js",
+    "test:cm5": "node tests/cm5-golden.js",
+    "test:cm5:update": "node tests/cm5-golden.js --update",
+    "test:embedded-spike": "npm run build && node tests/embedded-language-spike.js",
+    "test:toolchain": "npm run build && node tests/cm6-build.js",
+    "test:parity": "npm run build && node tests/cm6-parity.js",
+    "test:editor": "npm run build && node tests/cm6-editor.js",
+    "test:bridge": "npm run build && node tests/cm6-bridge.js",
+    "test:page-completion": "npm run build && node tests/cm6-page-completion.js",
+    "test:dokuwiki": "node tests/dokuwiki-librarian.js",
+    "test:styles": "npm run build && node tests/cm6-styles.js",
+    "typecheck": "tsc --noEmit",
+    "notices": "node scripts/notices.mjs"
+  },
+  "engines": {
+    "node": ">=20.19.0 <25",
+    "npm": ">=10.8.0 <12"
+  },
+  "license": "GPL-2.0-or-later",
+  "name": "dokuwiki-plugin-codemirror6"
+}

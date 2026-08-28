@@ -1,0 +1,2 @@
+{{fa>home?2x}}
+{{glyphicon>star&spin=1}}

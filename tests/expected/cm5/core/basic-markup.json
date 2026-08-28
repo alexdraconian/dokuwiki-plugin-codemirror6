@@ -1,0 +1,834 @@
+{
+  "fixture": "core/basic-markup.txt",
+  "tokens": [
+    {
+      "from": 0,
+      "to": 16,
+      "text": "====== 제목 ======",
+      "styles": "header"
+    },
+    {
+      "from": 18,
+      "to": 21,
+      "text": "  *",
+      "styles": "def"
+    },
+    {
+      "from": 21,
+      "to": 22,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 22,
+      "to": 24,
+      "text": "**",
+      "styles": "strong"
+    },
+    {
+      "from": 24,
+      "to": 25,
+      "text": "굵",
+      "styles": "strong"
+    },
+    {
+      "from": 25,
+      "to": 26,
+      "text": "게",
+      "styles": "strong"
+    },
+    {
+      "from": 26,
+      "to": 28,
+      "text": "**",
+      "styles": "strong"
+    },
+    {
+      "from": 28,
+      "to": 29,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 29,
+      "to": 31,
+      "text": "//",
+      "styles": "em"
+    },
+    {
+      "from": 31,
+      "to": 32,
+      "text": "기",
+      "styles": "em"
+    },
+    {
+      "from": 32,
+      "to": 33,
+      "text": "울",
+      "styles": "em"
+    },
+    {
+      "from": 33,
+      "to": 34,
+      "text": "임",
+      "styles": "em"
+    },
+    {
+      "from": 34,
+      "to": 36,
+      "text": "//",
+      "styles": "em"
+    },
+    {
+      "from": 36,
+      "to": 37,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 37,
+      "to": 39,
+      "text": "__",
+      "styles": "underline"
+    },
+    {
+      "from": 39,
+      "to": 40,
+      "text": "밑",
+      "styles": "underline"
+    },
+    {
+      "from": 40,
+      "to": 41,
+      "text": "줄",
+      "styles": "underline"
+    },
+    {
+      "from": 41,
+      "to": 43,
+      "text": "__",
+      "styles": "underline"
+    },
+    {
+      "from": 43,
+      "to": 44,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 44,
+      "to": 46,
+      "text": "''",
+      "styles": "quote"
+    },
+    {
+      "from": 46,
+      "to": 47,
+      "text": "고",
+      "styles": "quote"
+    },
+    {
+      "from": 47,
+      "to": 48,
+      "text": "정",
+      "styles": "quote"
+    },
+    {
+      "from": 48,
+      "to": 49,
+      "text": "폭",
+      "styles": "quote"
+    },
+    {
+      "from": 49,
+      "to": 51,
+      "text": "''",
+      "styles": "quote"
+    },
+    {
+      "from": 51,
+      "to": 52,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 52,
+      "to": 57,
+      "text": "<sub>",
+      "styles": "tag"
+    },
+    {
+      "from": 57,
+      "to": 58,
+      "text": "아",
+      "styles": null
+    },
+    {
+      "from": 58,
+      "to": 59,
+      "text": "래",
+      "styles": null
+    },
+    {
+      "from": 59,
+      "to": 65,
+      "text": "</sub>",
+      "styles": "tag"
+    },
+    {
+      "from": 65,
+      "to": 66,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 66,
+      "to": 71,
+      "text": "<sup>",
+      "styles": "tag"
+    },
+    {
+      "from": 71,
+      "to": 72,
+      "text": "위",
+      "styles": null
+    },
+    {
+      "from": 72,
+      "to": 78,
+      "text": "</sup>",
+      "styles": "tag"
+    },
+    {
+      "from": 78,
+      "to": 79,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 79,
+      "to": 84,
+      "text": "<del>",
+      "styles": "tag"
+    },
+    {
+      "from": 84,
+      "to": 85,
+      "text": "삭",
+      "styles": null
+    },
+    {
+      "from": 85,
+      "to": 86,
+      "text": "제",
+      "styles": null
+    },
+    {
+      "from": 86,
+      "to": 92,
+      "text": "</del>",
+      "styles": "tag"
+    },
+    {
+      "from": 93,
+      "to": 96,
+      "text": "  *",
+      "styles": "def"
+    },
+    {
+      "from": 96,
+      "to": 97,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 97,
+      "to": 98,
+      "text": "목",
+      "styles": null
+    },
+    {
+      "from": 98,
+      "to": 99,
+      "text": "록",
+      "styles": null
+    },
+    {
+      "from": 99,
+      "to": 100,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 100,
+      "to": 101,
+      "text": "항",
+      "styles": null
+    },
+    {
+      "from": 101,
+      "to": 102,
+      "text": "목",
+      "styles": null
+    },
+    {
+      "from": 103,
+      "to": 105,
+      "text": "  ",
+      "styles": "string"
+    },
+    {
+      "from": 105,
+      "to": 106,
+      "text": "일",
+      "styles": "string"
+    },
+    {
+      "from": 106,
+      "to": 107,
+      "text": "반",
+      "styles": "string"
+    },
+    {
+      "from": 107,
+      "to": 108,
+      "text": " ",
+      "styles": "string"
+    },
+    {
+      "from": 108,
+      "to": 109,
+      "text": "p",
+      "styles": "string"
+    },
+    {
+      "from": 109,
+      "to": 110,
+      "text": "r",
+      "styles": "string"
+    },
+    {
+      "from": 110,
+      "to": 111,
+      "text": "e",
+      "styles": "string"
+    },
+    {
+      "from": 111,
+      "to": 112,
+      "text": "f",
+      "styles": "string"
+    },
+    {
+      "from": 112,
+      "to": 113,
+      "text": "o",
+      "styles": "string"
+    },
+    {
+      "from": 113,
+      "to": 114,
+      "text": "r",
+      "styles": "string"
+    },
+    {
+      "from": 114,
+      "to": 115,
+      "text": "m",
+      "styles": "string"
+    },
+    {
+      "from": 115,
+      "to": 116,
+      "text": "a",
+      "styles": "string"
+    },
+    {
+      "from": 116,
+      "to": 117,
+      "text": "t",
+      "styles": "string"
+    },
+    {
+      "from": 117,
+      "to": 118,
+      "text": "t",
+      "styles": "string"
+    },
+    {
+      "from": 118,
+      "to": 119,
+      "text": "e",
+      "styles": "string"
+    },
+    {
+      "from": 119,
+      "to": 120,
+      "text": "d",
+      "styles": "string"
+    },
+    {
+      "from": 120,
+      "to": 121,
+      "text": " ",
+      "styles": "string"
+    },
+    {
+      "from": 121,
+      "to": 122,
+      "text": "한",
+      "styles": "string"
+    },
+    {
+      "from": 122,
+      "to": 123,
+      "text": "글",
+      "styles": "string"
+    },
+    {
+      "from": 123,
+      "to": 124,
+      "text": " ",
+      "styles": "string"
+    },
+    {
+      "from": 124,
+      "to": 125,
+      "text": "\ud83d",
+      "styles": "string"
+    },
+    {
+      "from": 125,
+      "to": 126,
+      "text": "\ude00",
+      "styles": "string"
+    },
+    {
+      "from": 128,
+      "to": 137,
+      "text": "~~NOTOC~~",
+      "styles": "meta"
+    },
+    {
+      "from": 137,
+      "to": 138,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 138,
+      "to": 149,
+      "text": "~~NOCACHE~~",
+      "styles": "meta"
+    },
+    {
+      "from": 150,
+      "to": 154,
+      "text": "----",
+      "styles": "hr"
+    },
+    {
+      "from": 155,
+      "to": 156,
+      "text": "|",
+      "styles": "def"
+    },
+    {
+      "from": 156,
+      "to": 157,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 157,
+      "to": 158,
+      "text": "셀",
+      "styles": null
+    },
+    {
+      "from": 158,
+      "to": 159,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 159,
+      "to": 160,
+      "text": "1",
+      "styles": null
+    },
+    {
+      "from": 160,
+      "to": 161,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 161,
+      "to": 162,
+      "text": "|",
+      "styles": "def"
+    },
+    {
+      "from": 162,
+      "to": 163,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 163,
+      "to": 165,
+      "text": "**",
+      "styles": "strong"
+    },
+    {
+      "from": 165,
+      "to": 166,
+      "text": "셀",
+      "styles": "strong"
+    },
+    {
+      "from": 166,
+      "to": 167,
+      "text": " ",
+      "styles": "strong"
+    },
+    {
+      "from": 167,
+      "to": 168,
+      "text": "2",
+      "styles": "strong"
+    },
+    {
+      "from": 168,
+      "to": 170,
+      "text": "**",
+      "styles": "strong"
+    },
+    {
+      "from": 170,
+      "to": 171,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 171,
+      "to": 172,
+      "text": "|",
+      "styles": "def"
+    },
+    {
+      "from": 173,
+      "to": 174,
+      "text": ">",
+      "styles": "def"
+    },
+    {
+      "from": 174,
+      "to": 175,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 175,
+      "to": 176,
+      "text": "인",
+      "styles": null
+    },
+    {
+      "from": 176,
+      "to": 177,
+      "text": "용",
+      "styles": null
+    },
+    {
+      "from": 177,
+      "to": 178,
+      "text": "문",
+      "styles": null
+    },
+    {
+      "from": 179,
+      "to": 181,
+      "text": ">>",
+      "styles": "def"
+    },
+    {
+      "from": 181,
+      "to": 182,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 182,
+      "to": 183,
+      "text": "중",
+      "styles": null
+    },
+    {
+      "from": 183,
+      "to": 184,
+      "text": "첩",
+      "styles": null
+    },
+    {
+      "from": 184,
+      "to": 185,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 185,
+      "to": 186,
+      "text": "인",
+      "styles": null
+    },
+    {
+      "from": 186,
+      "to": 187,
+      "text": "용",
+      "styles": null
+    },
+    {
+      "from": 187,
+      "to": 188,
+      "text": "문",
+      "styles": null
+    },
+    {
+      "from": 190,
+      "to": 198,
+      "text": "<nowiki>",
+      "styles": "tag"
+    },
+    {
+      "from": 198,
+      "to": 199,
+      "text": "*",
+      "styles": null
+    },
+    {
+      "from": 199,
+      "to": 200,
+      "text": "*",
+      "styles": null
+    },
+    {
+      "from": 200,
+      "to": 201,
+      "text": "강",
+      "styles": null
+    },
+    {
+      "from": 201,
+      "to": 202,
+      "text": "조",
+      "styles": null
+    },
+    {
+      "from": 202,
+      "to": 203,
+      "text": "하",
+      "styles": null
+    },
+    {
+      "from": 203,
+      "to": 204,
+      "text": "지",
+      "styles": null
+    },
+    {
+      "from": 204,
+      "to": 205,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 205,
+      "to": 206,
+      "text": "않",
+      "styles": null
+    },
+    {
+      "from": 206,
+      "to": 207,
+      "text": "음",
+      "styles": null
+    },
+    {
+      "from": 207,
+      "to": 208,
+      "text": "*",
+      "styles": null
+    },
+    {
+      "from": 208,
+      "to": 209,
+      "text": "*",
+      "styles": null
+    },
+    {
+      "from": 209,
+      "to": 218,
+      "text": "</nowiki>",
+      "styles": "tag"
+    },
+    {
+      "from": 219,
+      "to": 221,
+      "text": "%%",
+      "styles": "string"
+    },
+    {
+      "from": 221,
+      "to": 222,
+      "text": "/",
+      "styles": "string"
+    },
+    {
+      "from": 222,
+      "to": 223,
+      "text": "/",
+      "styles": "string"
+    },
+    {
+      "from": 223,
+      "to": 224,
+      "text": "강",
+      "styles": "string"
+    },
+    {
+      "from": 224,
+      "to": 225,
+      "text": "조",
+      "styles": "string"
+    },
+    {
+      "from": 225,
+      "to": 226,
+      "text": "하",
+      "styles": "string"
+    },
+    {
+      "from": 226,
+      "to": 227,
+      "text": "지",
+      "styles": "string"
+    },
+    {
+      "from": 227,
+      "to": 228,
+      "text": " ",
+      "styles": "string"
+    },
+    {
+      "from": 228,
+      "to": 229,
+      "text": "않",
+      "styles": "string"
+    },
+    {
+      "from": 229,
+      "to": 230,
+      "text": "음",
+      "styles": "string"
+    },
+    {
+      "from": 230,
+      "to": 231,
+      "text": "/",
+      "styles": "string"
+    },
+    {
+      "from": 231,
+      "to": 232,
+      "text": "/",
+      "styles": "string"
+    },
+    {
+      "from": 232,
+      "to": 234,
+      "text": "%%",
+      "styles": "string"
+    },
+    {
+      "from": 235,
+      "to": 237,
+      "text": "((",
+      "styles": "tag"
+    },
+    {
+      "from": 237,
+      "to": 238,
+      "text": "각",
+      "styles": null
+    },
+    {
+      "from": 238,
+      "to": 239,
+      "text": "주",
+      "styles": null
+    },
+    {
+      "from": 239,
+      "to": 240,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 240,
+      "to": 241,
+      "text": "안",
+      "styles": null
+    },
+    {
+      "from": 241,
+      "to": 242,
+      "text": "의",
+      "styles": null
+    },
+    {
+      "from": 242,
+      "to": 243,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 243,
+      "to": 245,
+      "text": "**",
+      "styles": "strong"
+    },
+    {
+      "from": 245,
+      "to": 246,
+      "text": "문",
+      "styles": "strong"
+    },
+    {
+      "from": 246,
+      "to": 247,
+      "text": "법",
+      "styles": "strong"
+    },
+    {
+      "from": 247,
+      "to": 249,
+      "text": "**",
+      "styles": "strong"
+    },
+    {
+      "from": 249,
+      "to": 251,
+      "text": "))",
+      "styles": "tag"
+    },
+    {
+      "from": 252,
+      "to": 256,
+      "text": "----",
+      "styles": "hr"
+    }
+  ],
+  "version": 1
+}

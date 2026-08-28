@@ -1,0 +1,66 @@
+{
+  "fixture": "plugins/color.txt",
+  "tokens": [
+    {
+      "from": 0,
+      "to": 11,
+      "text": "<color red>",
+      "styles": "tag"
+    },
+    {
+      "from": 11,
+      "to": 12,
+      "text": "빨",
+      "styles": null
+    },
+    {
+      "from": 12,
+      "to": 13,
+      "text": "간",
+      "styles": null
+    },
+    {
+      "from": 13,
+      "to": 14,
+      "text": "색",
+      "styles": null
+    },
+    {
+      "from": 14,
+      "to": 15,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 15,
+      "to": 17,
+      "text": "**",
+      "styles": "strong"
+    },
+    {
+      "from": 17,
+      "to": 18,
+      "text": "강",
+      "styles": "strong"
+    },
+    {
+      "from": 18,
+      "to": 19,
+      "text": "조",
+      "styles": "strong"
+    },
+    {
+      "from": 19,
+      "to": 21,
+      "text": "**",
+      "styles": "strong"
+    },
+    {
+      "from": 21,
+      "to": 29,
+      "text": "</color>",
+      "styles": "tag"
+    }
+  ],
+  "version": 1
+}

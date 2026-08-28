@@ -1,0 +1,18 @@
+{
+  "fixture": "plugins/numberof.txt",
+  "tokens": [
+    {
+      "from": 0,
+      "to": 17,
+      "text": "{{NUMBEROFPAGES}}",
+      "styles": "tag"
+    },
+    {
+      "from": 18,
+      "to": 52,
+      "text": "{{NUMBEROFMEDIAS>media namespace}}",
+      "styles": "tag"
+    }
+  ],
+  "version": 1
+}

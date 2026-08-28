@@ -1,0 +1,108 @@
+{
+  "fixture": "plugins/refnotes.txt",
+  "tokens": [
+    {
+      "from": 0,
+      "to": 1,
+      "text": "본",
+      "styles": null
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "text": "문",
+      "styles": null
+    },
+    {
+      "from": 2,
+      "to": 4,
+      "text": "[(",
+      "styles": "tag"
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "text": "주",
+      "styles": null
+    },
+    {
+      "from": 5,
+      "to": 6,
+      "text": "석",
+      "styles": null
+    },
+    {
+      "from": 6,
+      "to": 7,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 7,
+      "to": 9,
+      "text": "**",
+      "styles": "strong"
+    },
+    {
+      "from": 9,
+      "to": 10,
+      "text": "내",
+      "styles": "strong"
+    },
+    {
+      "from": 10,
+      "to": 11,
+      "text": "용",
+      "styles": "strong"
+    },
+    {
+      "from": 11,
+      "to": 13,
+      "text": "**",
+      "styles": "strong"
+    },
+    {
+      "from": 13,
+      "to": 15,
+      "text": ")]",
+      "styles": "tag"
+    },
+    {
+      "from": 15,
+      "to": 16,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 16,
+      "to": 17,
+      "text": "뒤",
+      "styles": null
+    },
+    {
+      "from": 17,
+      "to": 18,
+      "text": "의",
+      "styles": null
+    },
+    {
+      "from": 18,
+      "to": 19,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 19,
+      "to": 20,
+      "text": "문",
+      "styles": null
+    },
+    {
+      "from": 20,
+      "to": 21,
+      "text": "장",
+      "styles": null
+    }
+  ],
+  "version": 1
+}

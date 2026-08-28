@@ -1,0 +1,780 @@
+{
+  "fixture": "core/links-and-media.txt",
+  "tokens": [
+    {
+      "from": 0,
+      "to": 1,
+      "text": "스",
+      "styles": null
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "text": "마",
+      "styles": null
+    },
+    {
+      "from": 2,
+      "to": 3,
+      "text": "일",
+      "styles": null
+    },
+    {
+      "from": 3,
+      "to": 4,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 4,
+      "to": 6,
+      "text": ":)",
+      "styles": "keyword"
+    },
+    {
+      "from": 6,
+      "to": 7,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 7,
+      "to": 9,
+      "text": ":D",
+      "styles": "keyword"
+    },
+    {
+      "from": 9,
+      "to": 10,
+      "text": ",",
+      "styles": null
+    },
+    {
+      "from": 10,
+      "to": 11,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 11,
+      "to": 12,
+      "text": "약",
+      "styles": null
+    },
+    {
+      "from": 12,
+      "to": 13,
+      "text": "어",
+      "styles": null
+    },
+    {
+      "from": 13,
+      "to": 14,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 14,
+      "to": 18,
+      "text": "HTML",
+      "styles": "keyword"
+    },
+    {
+      "from": 18,
+      "to": 19,
+      "text": ",",
+      "styles": null
+    },
+    {
+      "from": 19,
+      "to": 20,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 20,
+      "to": 21,
+      "text": "엔",
+      "styles": null
+    },
+    {
+      "from": 21,
+      "to": 22,
+      "text": "티",
+      "styles": null
+    },
+    {
+      "from": 22,
+      "to": 23,
+      "text": "티",
+      "styles": null
+    },
+    {
+      "from": 23,
+      "to": 24,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 24,
+      "to": 30,
+      "text": "&copy;",
+      "styles": "keyword"
+    },
+    {
+      "from": 30,
+      "to": 31,
+      "text": "와",
+      "styles": null
+    },
+    {
+      "from": 31,
+      "to": 32,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 32,
+      "to": 39,
+      "text": "&trade;",
+      "styles": "keyword"
+    },
+    {
+      "from": 39,
+      "to": 40,
+      "text": ",",
+      "styles": null
+    },
+    {
+      "from": 40,
+      "to": 41,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 41,
+      "to": 42,
+      "text": "크",
+      "styles": null
+    },
+    {
+      "from": 42,
+      "to": 43,
+      "text": "기",
+      "styles": null
+    },
+    {
+      "from": 43,
+      "to": 44,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 44,
+      "to": 45,
+      "text": "2",
+      "styles": null
+    },
+    {
+      "from": 45,
+      "to": 46,
+      "text": "x",
+      "styles": "keyword"
+    },
+    {
+      "from": 46,
+      "to": 47,
+      "text": "3",
+      "styles": null
+    },
+    {
+      "from": 47,
+      "to": 48,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 48,
+      "to": 49,
+      "text": "및",
+      "styles": null
+    },
+    {
+      "from": 49,
+      "to": 50,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 50,
+      "to": 52,
+      "text": "10",
+      "styles": null
+    },
+    {
+      "from": 52,
+      "to": 53,
+      "text": "X",
+      "styles": "keyword"
+    },
+    {
+      "from": 53,
+      "to": 55,
+      "text": "20",
+      "styles": null
+    },
+    {
+      "from": 55,
+      "to": 56,
+      "text": ".",
+      "styles": null
+    },
+    {
+      "from": 57,
+      "to": 58,
+      "text": "C",
+      "styles": null
+    },
+    {
+      "from": 58,
+      "to": 59,
+      "text": "a",
+      "styles": null
+    },
+    {
+      "from": 59,
+      "to": 60,
+      "text": "m",
+      "styles": null
+    },
+    {
+      "from": 60,
+      "to": 61,
+      "text": "e",
+      "styles": null
+    },
+    {
+      "from": 61,
+      "to": 62,
+      "text": "l",
+      "styles": null
+    },
+    {
+      "from": 62,
+      "to": 63,
+      "text": "C",
+      "styles": null
+    },
+    {
+      "from": 63,
+      "to": 64,
+      "text": "a",
+      "styles": null
+    },
+    {
+      "from": 64,
+      "to": 65,
+      "text": "s",
+      "styles": null
+    },
+    {
+      "from": 65,
+      "to": 66,
+      "text": "e",
+      "styles": null
+    },
+    {
+      "from": 66,
+      "to": 67,
+      "text": "L",
+      "styles": null
+    },
+    {
+      "from": 67,
+      "to": 68,
+      "text": "i",
+      "styles": null
+    },
+    {
+      "from": 68,
+      "to": 69,
+      "text": "n",
+      "styles": null
+    },
+    {
+      "from": 69,
+      "to": 70,
+      "text": "k",
+      "styles": null
+    },
+    {
+      "from": 70,
+      "to": 71,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 71,
+      "to": 73,
+      "text": "[[",
+      "styles": null
+    },
+    {
+      "from": 73,
+      "to": 74,
+      "text": "w",
+      "styles": "link"
+    },
+    {
+      "from": 74,
+      "to": 75,
+      "text": "i",
+      "styles": "link"
+    },
+    {
+      "from": 75,
+      "to": 76,
+      "text": "k",
+      "styles": "link"
+    },
+    {
+      "from": 76,
+      "to": 77,
+      "text": "i",
+      "styles": "link"
+    },
+    {
+      "from": 77,
+      "to": 78,
+      "text": ":",
+      "styles": "link"
+    },
+    {
+      "from": 78,
+      "to": 79,
+      "text": "p",
+      "styles": "link"
+    },
+    {
+      "from": 79,
+      "to": 80,
+      "text": "a",
+      "styles": "link"
+    },
+    {
+      "from": 80,
+      "to": 81,
+      "text": "g",
+      "styles": "link"
+    },
+    {
+      "from": 81,
+      "to": 82,
+      "text": "e",
+      "styles": "link"
+    },
+    {
+      "from": 82,
+      "to": 83,
+      "text": "|",
+      "styles": null
+    },
+    {
+      "from": 83,
+      "to": 84,
+      "text": "링",
+      "styles": "string"
+    },
+    {
+      "from": 84,
+      "to": 85,
+      "text": "크",
+      "styles": "string"
+    },
+    {
+      "from": 85,
+      "to": 86,
+      "text": " ",
+      "styles": "string"
+    },
+    {
+      "from": 86,
+      "to": 87,
+      "text": "제",
+      "styles": "string"
+    },
+    {
+      "from": 87,
+      "to": 88,
+      "text": "목",
+      "styles": "string"
+    },
+    {
+      "from": 88,
+      "to": 89,
+      "text": " ",
+      "styles": "string"
+    },
+    {
+      "from": 89,
+      "to": 90,
+      "text": "\ud83d",
+      "styles": "string"
+    },
+    {
+      "from": 90,
+      "to": 91,
+      "text": "\ude00",
+      "styles": "string"
+    },
+    {
+      "from": 91,
+      "to": 93,
+      "text": "]]",
+      "styles": null
+    },
+    {
+      "from": 93,
+      "to": 94,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 94,
+      "to": 100,
+      "text": "{{rss>",
+      "styles": "tag"
+    },
+    {
+      "from": 100,
+      "to": 101,
+      "text": "h",
+      "styles": null
+    },
+    {
+      "from": 101,
+      "to": 102,
+      "text": "t",
+      "styles": null
+    },
+    {
+      "from": 102,
+      "to": 103,
+      "text": "t",
+      "styles": null
+    },
+    {
+      "from": 103,
+      "to": 104,
+      "text": "p",
+      "styles": null
+    },
+    {
+      "from": 104,
+      "to": 105,
+      "text": "s",
+      "styles": null
+    },
+    {
+      "from": 105,
+      "to": 106,
+      "text": ":",
+      "styles": null
+    },
+    {
+      "from": 106,
+      "to": 107,
+      "text": "/",
+      "styles": null
+    },
+    {
+      "from": 107,
+      "to": 108,
+      "text": "/",
+      "styles": null
+    },
+    {
+      "from": 108,
+      "to": 109,
+      "text": "e",
+      "styles": null
+    },
+    {
+      "from": 109,
+      "to": 110,
+      "text": "x",
+      "styles": null
+    },
+    {
+      "from": 110,
+      "to": 111,
+      "text": "a",
+      "styles": null
+    },
+    {
+      "from": 111,
+      "to": 112,
+      "text": "m",
+      "styles": null
+    },
+    {
+      "from": 112,
+      "to": 113,
+      "text": "p",
+      "styles": null
+    },
+    {
+      "from": 113,
+      "to": 114,
+      "text": "l",
+      "styles": null
+    },
+    {
+      "from": 114,
+      "to": 115,
+      "text": "e",
+      "styles": null
+    },
+    {
+      "from": 115,
+      "to": 116,
+      "text": ".",
+      "styles": null
+    },
+    {
+      "from": 116,
+      "to": 117,
+      "text": "o",
+      "styles": null
+    },
+    {
+      "from": 117,
+      "to": 118,
+      "text": "r",
+      "styles": null
+    },
+    {
+      "from": 118,
+      "to": 119,
+      "text": "g",
+      "styles": null
+    },
+    {
+      "from": 119,
+      "to": 120,
+      "text": "/",
+      "styles": null
+    },
+    {
+      "from": 120,
+      "to": 121,
+      "text": "f",
+      "styles": null
+    },
+    {
+      "from": 121,
+      "to": 122,
+      "text": "e",
+      "styles": null
+    },
+    {
+      "from": 122,
+      "to": 123,
+      "text": "e",
+      "styles": null
+    },
+    {
+      "from": 123,
+      "to": 124,
+      "text": "d",
+      "styles": null
+    },
+    {
+      "from": 124,
+      "to": 126,
+      "text": "}}",
+      "styles": "tag"
+    },
+    {
+      "from": 127,
+      "to": 129,
+      "text": "{{",
+      "styles": null
+    },
+    {
+      "from": 129,
+      "to": 130,
+      "text": "i",
+      "styles": "link"
+    },
+    {
+      "from": 130,
+      "to": 131,
+      "text": "m",
+      "styles": "link"
+    },
+    {
+      "from": 131,
+      "to": 132,
+      "text": "a",
+      "styles": "link"
+    },
+    {
+      "from": 132,
+      "to": 133,
+      "text": "g",
+      "styles": "link"
+    },
+    {
+      "from": 133,
+      "to": 134,
+      "text": "e",
+      "styles": "link"
+    },
+    {
+      "from": 134,
+      "to": 135,
+      "text": ".",
+      "styles": "link"
+    },
+    {
+      "from": 135,
+      "to": 136,
+      "text": "p",
+      "styles": "link"
+    },
+    {
+      "from": 136,
+      "to": 137,
+      "text": "n",
+      "styles": "link"
+    },
+    {
+      "from": 137,
+      "to": 138,
+      "text": "g",
+      "styles": "link"
+    },
+    {
+      "from": 138,
+      "to": 139,
+      "text": "?",
+      "styles": null
+    },
+    {
+      "from": 139,
+      "to": 146,
+      "text": "200x100",
+      "styles": "number"
+    },
+    {
+      "from": 146,
+      "to": 147,
+      "text": "&",
+      "styles": "error"
+    },
+    {
+      "from": 147,
+      "to": 153,
+      "text": "direct",
+      "styles": "keyword"
+    },
+    {
+      "from": 153,
+      "to": 154,
+      "text": "|",
+      "styles": null
+    },
+    {
+      "from": 154,
+      "to": 155,
+      "text": "이",
+      "styles": "string"
+    },
+    {
+      "from": 155,
+      "to": 156,
+      "text": "미",
+      "styles": "string"
+    },
+    {
+      "from": 156,
+      "to": 157,
+      "text": "지",
+      "styles": "string"
+    },
+    {
+      "from": 157,
+      "to": 158,
+      "text": " ",
+      "styles": "string"
+    },
+    {
+      "from": 158,
+      "to": 159,
+      "text": "제",
+      "styles": "string"
+    },
+    {
+      "from": 159,
+      "to": 160,
+      "text": "목",
+      "styles": "string"
+    },
+    {
+      "from": 160,
+      "to": 162,
+      "text": "}}",
+      "styles": null
+    },
+    {
+      "from": 163,
+      "to": 188,
+      "text": "https://example.org/a?q=1",
+      "styles": "link"
+    },
+    {
+      "from": 188,
+      "to": 189,
+      "text": ",",
+      "styles": null
+    },
+    {
+      "from": 189,
+      "to": 190,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 190,
+      "to": 208,
+      "text": "<user@example.org>",
+      "styles": "link"
+    },
+    {
+      "from": 208,
+      "to": 209,
+      "text": ",",
+      "styles": null
+    },
+    {
+      "from": 209,
+      "to": 210,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 210,
+      "to": 224,
+      "text": "\\\\server\\share",
+      "styles": "link"
+    },
+    {
+      "from": 225,
+      "to": 253,
+      "text": "file://server/share/file.txt",
+      "styles": "link"
+    }
+  ],
+  "version": 1
+}

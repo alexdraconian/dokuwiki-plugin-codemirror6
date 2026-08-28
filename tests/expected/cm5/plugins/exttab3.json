@@ -1,0 +1,258 @@
+{
+  "fixture": "plugins/exttab3.txt",
+  "tokens": [
+    {
+      "from": 0,
+      "to": 2,
+      "text": "{|",
+      "styles": "def"
+    },
+    {
+      "from": 2,
+      "to": 3,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 3,
+      "to": 4,
+      "text": "c",
+      "styles": null
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "text": "l",
+      "styles": null
+    },
+    {
+      "from": 5,
+      "to": 6,
+      "text": "a",
+      "styles": null
+    },
+    {
+      "from": 6,
+      "to": 7,
+      "text": "s",
+      "styles": null
+    },
+    {
+      "from": 7,
+      "to": 8,
+      "text": "s",
+      "styles": null
+    },
+    {
+      "from": 8,
+      "to": 9,
+      "text": "=",
+      "styles": null
+    },
+    {
+      "from": 9,
+      "to": 10,
+      "text": "\"",
+      "styles": null
+    },
+    {
+      "from": 10,
+      "to": 11,
+      "text": "w",
+      "styles": null
+    },
+    {
+      "from": 11,
+      "to": 12,
+      "text": "i",
+      "styles": null
+    },
+    {
+      "from": 12,
+      "to": 13,
+      "text": "k",
+      "styles": null
+    },
+    {
+      "from": 13,
+      "to": 14,
+      "text": "i",
+      "styles": null
+    },
+    {
+      "from": 14,
+      "to": 15,
+      "text": "t",
+      "styles": null
+    },
+    {
+      "from": 15,
+      "to": 16,
+      "text": "a",
+      "styles": null
+    },
+    {
+      "from": 16,
+      "to": 17,
+      "text": "b",
+      "styles": null
+    },
+    {
+      "from": 17,
+      "to": 18,
+      "text": "l",
+      "styles": null
+    },
+    {
+      "from": 18,
+      "to": 19,
+      "text": "e",
+      "styles": null
+    },
+    {
+      "from": 19,
+      "to": 20,
+      "text": "\"",
+      "styles": null
+    },
+    {
+      "from": 21,
+      "to": 22,
+      "text": "!",
+      "styles": "def"
+    },
+    {
+      "from": 22,
+      "to": 23,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 23,
+      "to": 24,
+      "text": "제",
+      "styles": null
+    },
+    {
+      "from": 24,
+      "to": 25,
+      "text": "목",
+      "styles": null
+    },
+    {
+      "from": 25,
+      "to": 26,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 26,
+      "to": 28,
+      "text": "!!",
+      "styles": "def"
+    },
+    {
+      "from": 28,
+      "to": 29,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 29,
+      "to": 30,
+      "text": "값",
+      "styles": null
+    },
+    {
+      "from": 31,
+      "to": 33,
+      "text": "|-",
+      "styles": "def"
+    },
+    {
+      "from": 34,
+      "to": 35,
+      "text": "|",
+      "styles": "def"
+    },
+    {
+      "from": 35,
+      "to": 36,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 36,
+      "to": 37,
+      "text": "셀",
+      "styles": null
+    },
+    {
+      "from": 37,
+      "to": 38,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 38,
+      "to": 39,
+      "text": "1",
+      "styles": null
+    },
+    {
+      "from": 39,
+      "to": 40,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 40,
+      "to": 42,
+      "text": "||",
+      "styles": "def"
+    },
+    {
+      "from": 42,
+      "to": 43,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 43,
+      "to": 45,
+      "text": "**",
+      "styles": "strong"
+    },
+    {
+      "from": 45,
+      "to": 46,
+      "text": "셀",
+      "styles": "strong"
+    },
+    {
+      "from": 46,
+      "to": 47,
+      "text": " ",
+      "styles": "strong"
+    },
+    {
+      "from": 47,
+      "to": 48,
+      "text": "2",
+      "styles": "strong"
+    },
+    {
+      "from": 48,
+      "to": 50,
+      "text": "**",
+      "styles": "strong"
+    },
+    {
+      "from": 51,
+      "to": 53,
+      "text": "|}",
+      "styles": "def"
+    }
+  ],
+  "version": 1
+}

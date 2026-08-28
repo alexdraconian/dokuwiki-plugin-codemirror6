@@ -1,0 +1,324 @@
+{
+  "fixture": "plugins/pageredirect.txt",
+  "tokens": [
+    {
+      "from": 0,
+      "to": 11,
+      "text": "~~REDIRECT>",
+      "styles": "meta"
+    },
+    {
+      "from": 11,
+      "to": 12,
+      "text": "p",
+      "styles": "link"
+    },
+    {
+      "from": 12,
+      "to": 13,
+      "text": "a",
+      "styles": "link"
+    },
+    {
+      "from": 13,
+      "to": 14,
+      "text": "g",
+      "styles": "link"
+    },
+    {
+      "from": 14,
+      "to": 15,
+      "text": "e",
+      "styles": "link"
+    },
+    {
+      "from": 15,
+      "to": 16,
+      "text": "s",
+      "styles": "link"
+    },
+    {
+      "from": 16,
+      "to": 17,
+      "text": ":",
+      "styles": "link"
+    },
+    {
+      "from": 17,
+      "to": 18,
+      "text": "s",
+      "styles": "link"
+    },
+    {
+      "from": 18,
+      "to": 19,
+      "text": "t",
+      "styles": "link"
+    },
+    {
+      "from": 19,
+      "to": 20,
+      "text": "a",
+      "styles": "link"
+    },
+    {
+      "from": 20,
+      "to": 21,
+      "text": "r",
+      "styles": "link"
+    },
+    {
+      "from": 21,
+      "to": 22,
+      "text": "t",
+      "styles": "link"
+    },
+    {
+      "from": 22,
+      "to": 24,
+      "text": "~~",
+      "styles": "meta"
+    },
+    {
+      "from": 25,
+      "to": 35,
+      "text": "#REDIRECT ",
+      "styles": "meta"
+    },
+    {
+      "from": 35,
+      "to": 36,
+      "text": "p",
+      "styles": "link"
+    },
+    {
+      "from": 36,
+      "to": 37,
+      "text": "a",
+      "styles": "link"
+    },
+    {
+      "from": 37,
+      "to": 38,
+      "text": "g",
+      "styles": "link"
+    },
+    {
+      "from": 38,
+      "to": 39,
+      "text": "e",
+      "styles": "link"
+    },
+    {
+      "from": 39,
+      "to": 40,
+      "text": "s",
+      "styles": "link"
+    },
+    {
+      "from": 40,
+      "to": 41,
+      "text": ":",
+      "styles": "link"
+    },
+    {
+      "from": 41,
+      "to": 42,
+      "text": "t",
+      "styles": "link"
+    },
+    {
+      "from": 42,
+      "to": 43,
+      "text": "a",
+      "styles": "link"
+    },
+    {
+      "from": 43,
+      "to": 44,
+      "text": "r",
+      "styles": "link"
+    },
+    {
+      "from": 44,
+      "to": 45,
+      "text": "g",
+      "styles": "link"
+    },
+    {
+      "from": 45,
+      "to": 46,
+      "text": "e",
+      "styles": "link"
+    },
+    {
+      "from": 46,
+      "to": 47,
+      "text": "t",
+      "styles": "link"
+    },
+    {
+      "from": 48,
+      "to": 49,
+      "text": "#",
+      "styles": "link"
+    },
+    {
+      "from": 49,
+      "to": 50,
+      "text": "r",
+      "styles": "link"
+    },
+    {
+      "from": 50,
+      "to": 51,
+      "text": "e",
+      "styles": "link"
+    },
+    {
+      "from": 51,
+      "to": 52,
+      "text": "d",
+      "styles": "link"
+    },
+    {
+      "from": 52,
+      "to": 53,
+      "text": "i",
+      "styles": "link"
+    },
+    {
+      "from": 53,
+      "to": 54,
+      "text": "r",
+      "styles": "link"
+    },
+    {
+      "from": 54,
+      "to": 55,
+      "text": "e",
+      "styles": "link"
+    },
+    {
+      "from": 55,
+      "to": 56,
+      "text": "c",
+      "styles": "link"
+    },
+    {
+      "from": 56,
+      "to": 57,
+      "text": "t",
+      "styles": "link"
+    },
+    {
+      "from": 57,
+      "to": 58,
+      "text": " ",
+      "styles": "link"
+    },
+    {
+      "from": 58,
+      "to": 59,
+      "text": "l",
+      "styles": "link"
+    },
+    {
+      "from": 59,
+      "to": 60,
+      "text": "o",
+      "styles": "link"
+    },
+    {
+      "from": 60,
+      "to": 61,
+      "text": "w",
+      "styles": "link"
+    },
+    {
+      "from": 61,
+      "to": 62,
+      "text": "e",
+      "styles": "link"
+    },
+    {
+      "from": 62,
+      "to": 63,
+      "text": "r",
+      "styles": "link"
+    },
+    {
+      "from": 63,
+      "to": 64,
+      "text": "-",
+      "styles": "link"
+    },
+    {
+      "from": 64,
+      "to": 65,
+      "text": "c",
+      "styles": "link"
+    },
+    {
+      "from": 65,
+      "to": 66,
+      "text": "a",
+      "styles": "link"
+    },
+    {
+      "from": 66,
+      "to": 67,
+      "text": "s",
+      "styles": "link"
+    },
+    {
+      "from": 67,
+      "to": 68,
+      "text": "e",
+      "styles": "link"
+    },
+    {
+      "from": 68,
+      "to": 69,
+      "text": "-",
+      "styles": "link"
+    },
+    {
+      "from": 69,
+      "to": 70,
+      "text": "t",
+      "styles": "link"
+    },
+    {
+      "from": 70,
+      "to": 71,
+      "text": "a",
+      "styles": "link"
+    },
+    {
+      "from": 71,
+      "to": 72,
+      "text": "r",
+      "styles": "link"
+    },
+    {
+      "from": 72,
+      "to": 73,
+      "text": "g",
+      "styles": "link"
+    },
+    {
+      "from": 73,
+      "to": 74,
+      "text": "e",
+      "styles": "link"
+    },
+    {
+      "from": 74,
+      "to": 75,
+      "text": "t",
+      "styles": "link"
+    }
+  ],
+  "version": 1
+}

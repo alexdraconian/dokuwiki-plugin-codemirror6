@@ -1,0 +1,72 @@
+{
+  "fixture": "plugins/fontsize2.txt",
+  "tokens": [
+    {
+      "from": 0,
+      "to": 9,
+      "text": "<fs 120%>",
+      "styles": "tag"
+    },
+    {
+      "from": 9,
+      "to": 10,
+      "text": "큰",
+      "styles": null
+    },
+    {
+      "from": 10,
+      "to": 11,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 11,
+      "to": 12,
+      "text": "글",
+      "styles": null
+    },
+    {
+      "from": 12,
+      "to": 13,
+      "text": "자",
+      "styles": null
+    },
+    {
+      "from": 13,
+      "to": 14,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 14,
+      "to": 16,
+      "text": "**",
+      "styles": "strong"
+    },
+    {
+      "from": 16,
+      "to": 17,
+      "text": "강",
+      "styles": "strong"
+    },
+    {
+      "from": 17,
+      "to": 18,
+      "text": "조",
+      "styles": "strong"
+    },
+    {
+      "from": 18,
+      "to": 20,
+      "text": "**",
+      "styles": "strong"
+    },
+    {
+      "from": 20,
+      "to": 25,
+      "text": "</fs>",
+      "styles": "tag"
+    }
+  ],
+  "version": 1
+}

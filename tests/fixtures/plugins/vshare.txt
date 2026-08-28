@@ -1,0 +1,2 @@
+{{youtube>video-id}}
+{{vimeo>clip-id?autoplay=1|동영상 제목}}

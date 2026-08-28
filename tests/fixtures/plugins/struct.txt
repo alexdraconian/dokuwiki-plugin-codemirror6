@@ -1,0 +1,6 @@
+---- struct table ----
+schema: people
+cols: %pageid%, %title%
+unknown: bad
+%lastupdate% {{$value}}
+----

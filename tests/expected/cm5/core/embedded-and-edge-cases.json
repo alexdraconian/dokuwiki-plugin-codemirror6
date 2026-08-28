@@ -1,0 +1,2964 @@
+{
+  "fixture": "core/embedded-and-edge-cases.txt",
+  "tokens": [
+    {
+      "from": 0,
+      "to": 5,
+      "text": "<code",
+      "styles": "tag"
+    },
+    {
+      "from": 5,
+      "to": 6,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 6,
+      "to": 16,
+      "text": "javascript",
+      "styles": "keyword"
+    },
+    {
+      "from": 16,
+      "to": 17,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 17,
+      "to": 24,
+      "text": "demo.js",
+      "styles": "string"
+    },
+    {
+      "from": 24,
+      "to": 25,
+      "text": ">",
+      "styles": "tag"
+    },
+    {
+      "from": 26,
+      "to": 27,
+      "text": "c",
+      "styles": null
+    },
+    {
+      "from": 27,
+      "to": 28,
+      "text": "o",
+      "styles": null
+    },
+    {
+      "from": 28,
+      "to": 29,
+      "text": "n",
+      "styles": null
+    },
+    {
+      "from": 29,
+      "to": 30,
+      "text": "s",
+      "styles": null
+    },
+    {
+      "from": 30,
+      "to": 31,
+      "text": "t",
+      "styles": null
+    },
+    {
+      "from": 31,
+      "to": 32,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 32,
+      "to": 33,
+      "text": "m",
+      "styles": null
+    },
+    {
+      "from": 33,
+      "to": 34,
+      "text": "e",
+      "styles": null
+    },
+    {
+      "from": 34,
+      "to": 35,
+      "text": "s",
+      "styles": null
+    },
+    {
+      "from": 35,
+      "to": 36,
+      "text": "s",
+      "styles": null
+    },
+    {
+      "from": 36,
+      "to": 37,
+      "text": "a",
+      "styles": null
+    },
+    {
+      "from": 37,
+      "to": 38,
+      "text": "g",
+      "styles": null
+    },
+    {
+      "from": 38,
+      "to": 39,
+      "text": "e",
+      "styles": null
+    },
+    {
+      "from": 39,
+      "to": 40,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 40,
+      "to": 41,
+      "text": "=",
+      "styles": null
+    },
+    {
+      "from": 41,
+      "to": 42,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 42,
+      "to": 43,
+      "text": "\"",
+      "styles": null
+    },
+    {
+      "from": 43,
+      "to": 44,
+      "text": "한",
+      "styles": null
+    },
+    {
+      "from": 44,
+      "to": 45,
+      "text": "글",
+      "styles": null
+    },
+    {
+      "from": 45,
+      "to": 46,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 46,
+      "to": 47,
+      "text": "\ud83d",
+      "styles": null
+    },
+    {
+      "from": 47,
+      "to": 48,
+      "text": "\ude00",
+      "styles": null
+    },
+    {
+      "from": 48,
+      "to": 49,
+      "text": "\"",
+      "styles": null
+    },
+    {
+      "from": 49,
+      "to": 50,
+      "text": ";",
+      "styles": null
+    },
+    {
+      "from": 51,
+      "to": 58,
+      "text": "</code>",
+      "styles": "tag"
+    },
+    {
+      "from": 59,
+      "to": 64,
+      "text": "<file",
+      "styles": "tag"
+    },
+    {
+      "from": 64,
+      "to": 65,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 65,
+      "to": 71,
+      "text": "python",
+      "styles": "keyword"
+    },
+    {
+      "from": 71,
+      "to": 72,
+      "text": ">",
+      "styles": "tag"
+    },
+    {
+      "from": 73,
+      "to": 74,
+      "text": "p",
+      "styles": null
+    },
+    {
+      "from": 74,
+      "to": 75,
+      "text": "r",
+      "styles": null
+    },
+    {
+      "from": 75,
+      "to": 76,
+      "text": "i",
+      "styles": null
+    },
+    {
+      "from": 76,
+      "to": 77,
+      "text": "n",
+      "styles": null
+    },
+    {
+      "from": 77,
+      "to": 78,
+      "text": "t",
+      "styles": null
+    },
+    {
+      "from": 78,
+      "to": 79,
+      "text": "(",
+      "styles": null
+    },
+    {
+      "from": 79,
+      "to": 80,
+      "text": "\"",
+      "styles": null
+    },
+    {
+      "from": 80,
+      "to": 81,
+      "text": "끝",
+      "styles": null
+    },
+    {
+      "from": 81,
+      "to": 82,
+      "text": "\"",
+      "styles": null
+    },
+    {
+      "from": 82,
+      "to": 83,
+      "text": ")",
+      "styles": null
+    },
+    {
+      "from": 84,
+      "to": 91,
+      "text": "</file>",
+      "styles": "tag"
+    },
+    {
+      "from": 92,
+      "to": 97,
+      "text": "<code",
+      "styles": "tag"
+    },
+    {
+      "from": 97,
+      "to": 98,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 98,
+      "to": 105,
+      "text": "unknown",
+      "styles": "error"
+    },
+    {
+      "from": 105,
+      "to": 106,
+      "text": ">",
+      "styles": "tag"
+    },
+    {
+      "from": 107,
+      "to": 108,
+      "text": "알",
+      "styles": null
+    },
+    {
+      "from": 108,
+      "to": 109,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 109,
+      "to": 110,
+      "text": "수",
+      "styles": null
+    },
+    {
+      "from": 110,
+      "to": 111,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 111,
+      "to": 112,
+      "text": "없",
+      "styles": null
+    },
+    {
+      "from": 112,
+      "to": 113,
+      "text": "는",
+      "styles": null
+    },
+    {
+      "from": 113,
+      "to": 114,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 114,
+      "to": 115,
+      "text": "언",
+      "styles": null
+    },
+    {
+      "from": 115,
+      "to": 116,
+      "text": "어",
+      "styles": null
+    },
+    {
+      "from": 116,
+      "to": 117,
+      "text": "도",
+      "styles": null
+    },
+    {
+      "from": 117,
+      "to": 118,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 118,
+      "to": 119,
+      "text": "평",
+      "styles": null
+    },
+    {
+      "from": 119,
+      "to": 120,
+      "text": "문",
+      "styles": null
+    },
+    {
+      "from": 120,
+      "to": 121,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 121,
+      "to": 122,
+      "text": "경",
+      "styles": null
+    },
+    {
+      "from": 122,
+      "to": 123,
+      "text": "계",
+      "styles": null
+    },
+    {
+      "from": 123,
+      "to": 124,
+      "text": "를",
+      "styles": null
+    },
+    {
+      "from": 124,
+      "to": 125,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 125,
+      "to": 126,
+      "text": "유",
+      "styles": null
+    },
+    {
+      "from": 126,
+      "to": 127,
+      "text": "지",
+      "styles": null
+    },
+    {
+      "from": 127,
+      "to": 128,
+      "text": "한",
+      "styles": null
+    },
+    {
+      "from": 128,
+      "to": 129,
+      "text": "다",
+      "styles": null
+    },
+    {
+      "from": 129,
+      "to": 130,
+      "text": ".",
+      "styles": null
+    },
+    {
+      "from": 131,
+      "to": 138,
+      "text": "</code>",
+      "styles": "tag"
+    },
+    {
+      "from": 139,
+      "to": 144,
+      "text": "<php>",
+      "styles": "tag"
+    },
+    {
+      "from": 144,
+      "to": 145,
+      "text": "$",
+      "styles": null
+    },
+    {
+      "from": 145,
+      "to": 146,
+      "text": "v",
+      "styles": null
+    },
+    {
+      "from": 146,
+      "to": 147,
+      "text": "a",
+      "styles": null
+    },
+    {
+      "from": 147,
+      "to": 148,
+      "text": "l",
+      "styles": null
+    },
+    {
+      "from": 148,
+      "to": 149,
+      "text": "u",
+      "styles": null
+    },
+    {
+      "from": 149,
+      "to": 150,
+      "text": "e",
+      "styles": null
+    },
+    {
+      "from": 150,
+      "to": 151,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 151,
+      "to": 152,
+      "text": "=",
+      "styles": null
+    },
+    {
+      "from": 152,
+      "to": 153,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 153,
+      "to": 154,
+      "text": "1",
+      "styles": null
+    },
+    {
+      "from": 154,
+      "to": 155,
+      "text": ";",
+      "styles": null
+    },
+    {
+      "from": 155,
+      "to": 161,
+      "text": "</php>",
+      "styles": "tag"
+    },
+    {
+      "from": 162,
+      "to": 167,
+      "text": "<PHP>",
+      "styles": "tag"
+    },
+    {
+      "from": 167,
+      "to": 168,
+      "text": "$",
+      "styles": null
+    },
+    {
+      "from": 168,
+      "to": 169,
+      "text": "v",
+      "styles": null
+    },
+    {
+      "from": 169,
+      "to": 170,
+      "text": "a",
+      "styles": null
+    },
+    {
+      "from": 170,
+      "to": 171,
+      "text": "l",
+      "styles": null
+    },
+    {
+      "from": 171,
+      "to": 172,
+      "text": "u",
+      "styles": null
+    },
+    {
+      "from": 172,
+      "to": 173,
+      "text": "e",
+      "styles": null
+    },
+    {
+      "from": 173,
+      "to": 174,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 174,
+      "to": 175,
+      "text": "=",
+      "styles": null
+    },
+    {
+      "from": 175,
+      "to": 176,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 176,
+      "to": 177,
+      "text": "2",
+      "styles": null
+    },
+    {
+      "from": 177,
+      "to": 178,
+      "text": ";",
+      "styles": null
+    },
+    {
+      "from": 178,
+      "to": 184,
+      "text": "</PHP>",
+      "styles": "tag"
+    },
+    {
+      "from": 185,
+      "to": 191,
+      "text": "<html>",
+      "styles": "tag"
+    },
+    {
+      "from": 191,
+      "to": 192,
+      "text": "<",
+      "styles": null
+    },
+    {
+      "from": 192,
+      "to": 193,
+      "text": "b",
+      "styles": null
+    },
+    {
+      "from": 193,
+      "to": 194,
+      "text": ">",
+      "styles": null
+    },
+    {
+      "from": 194,
+      "to": 195,
+      "text": "h",
+      "styles": null
+    },
+    {
+      "from": 195,
+      "to": 196,
+      "text": "t",
+      "styles": null
+    },
+    {
+      "from": 196,
+      "to": 197,
+      "text": "m",
+      "styles": null
+    },
+    {
+      "from": 197,
+      "to": 198,
+      "text": "l",
+      "styles": null
+    },
+    {
+      "from": 198,
+      "to": 199,
+      "text": "<",
+      "styles": null
+    },
+    {
+      "from": 199,
+      "to": 200,
+      "text": "/",
+      "styles": null
+    },
+    {
+      "from": 200,
+      "to": 201,
+      "text": "b",
+      "styles": null
+    },
+    {
+      "from": 201,
+      "to": 202,
+      "text": ">",
+      "styles": null
+    },
+    {
+      "from": 202,
+      "to": 209,
+      "text": "</html>",
+      "styles": "tag"
+    },
+    {
+      "from": 210,
+      "to": 216,
+      "text": "<HTML>",
+      "styles": "tag"
+    },
+    {
+      "from": 216,
+      "to": 217,
+      "text": "<",
+      "styles": null
+    },
+    {
+      "from": 217,
+      "to": 218,
+      "text": "b",
+      "styles": null
+    },
+    {
+      "from": 218,
+      "to": 219,
+      "text": ">",
+      "styles": null
+    },
+    {
+      "from": 219,
+      "to": 220,
+      "text": "H",
+      "styles": null
+    },
+    {
+      "from": 220,
+      "to": 221,
+      "text": "T",
+      "styles": null
+    },
+    {
+      "from": 221,
+      "to": 222,
+      "text": "M",
+      "styles": null
+    },
+    {
+      "from": 222,
+      "to": 223,
+      "text": "L",
+      "styles": null
+    },
+    {
+      "from": 223,
+      "to": 224,
+      "text": "<",
+      "styles": null
+    },
+    {
+      "from": 224,
+      "to": 225,
+      "text": "/",
+      "styles": null
+    },
+    {
+      "from": 225,
+      "to": 226,
+      "text": "b",
+      "styles": null
+    },
+    {
+      "from": 226,
+      "to": 227,
+      "text": ">",
+      "styles": null
+    },
+    {
+      "from": 227,
+      "to": 234,
+      "text": "</HTML>",
+      "styles": "tag"
+    },
+    {
+      "from": 235,
+      "to": 236,
+      "text": "빈",
+      "styles": null
+    },
+    {
+      "from": 236,
+      "to": 237,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 237,
+      "to": 238,
+      "text": "문",
+      "styles": null
+    },
+    {
+      "from": 238,
+      "to": 239,
+      "text": "법",
+      "styles": null
+    },
+    {
+      "from": 239,
+      "to": 240,
+      "text": "과",
+      "styles": null
+    },
+    {
+      "from": 240,
+      "to": 241,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 241,
+      "to": 242,
+      "text": "미",
+      "styles": null
+    },
+    {
+      "from": 242,
+      "to": 243,
+      "text": "완",
+      "styles": null
+    },
+    {
+      "from": 243,
+      "to": 244,
+      "text": "성",
+      "styles": null
+    },
+    {
+      "from": 244,
+      "to": 245,
+      "text": "은",
+      "styles": null
+    },
+    {
+      "from": 245,
+      "to": 246,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 246,
+      "to": 247,
+      "text": "그",
+      "styles": null
+    },
+    {
+      "from": 247,
+      "to": 248,
+      "text": "대",
+      "styles": null
+    },
+    {
+      "from": 248,
+      "to": 249,
+      "text": "로",
+      "styles": null
+    },
+    {
+      "from": 249,
+      "to": 250,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 250,
+      "to": 251,
+      "text": "처",
+      "styles": null
+    },
+    {
+      "from": 251,
+      "to": 252,
+      "text": "리",
+      "styles": null
+    },
+    {
+      "from": 252,
+      "to": 253,
+      "text": "한",
+      "styles": null
+    },
+    {
+      "from": 253,
+      "to": 254,
+      "text": "다",
+      "styles": null
+    },
+    {
+      "from": 254,
+      "to": 255,
+      "text": ":",
+      "styles": null
+    },
+    {
+      "from": 255,
+      "to": 256,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 256,
+      "to": 258,
+      "text": "**",
+      "styles": "strong"
+    },
+    {
+      "from": 258,
+      "to": 259,
+      "text": "열",
+      "styles": "strong"
+    },
+    {
+      "from": 259,
+      "to": 260,
+      "text": "린",
+      "styles": "strong"
+    },
+    {
+      "from": 260,
+      "to": 261,
+      "text": " ",
+      "styles": "strong"
+    },
+    {
+      "from": 261,
+      "to": 262,
+      "text": "문",
+      "styles": "strong"
+    },
+    {
+      "from": 262,
+      "to": 263,
+      "text": "법",
+      "styles": "strong"
+    },
+    {
+      "from": 264,
+      "to": 265,
+      "text": "이",
+      "styles": "strong"
+    },
+    {
+      "from": 265,
+      "to": 266,
+      "text": "모",
+      "styles": "strong"
+    },
+    {
+      "from": 266,
+      "to": 267,
+      "text": "지",
+      "styles": "strong"
+    },
+    {
+      "from": 267,
+      "to": 268,
+      "text": " ",
+      "styles": "strong"
+    },
+    {
+      "from": 268,
+      "to": 269,
+      "text": "\ud83d",
+      "styles": "strong"
+    },
+    {
+      "from": 269,
+      "to": 270,
+      "text": "\ude00",
+      "styles": "strong"
+    },
+    {
+      "from": 270,
+      "to": 271,
+      "text": "를",
+      "styles": "strong"
+    },
+    {
+      "from": 271,
+      "to": 272,
+      "text": " ",
+      "styles": "strong"
+    },
+    {
+      "from": 272,
+      "to": 273,
+      "text": "포",
+      "styles": "strong"
+    },
+    {
+      "from": 273,
+      "to": 274,
+      "text": "함",
+      "styles": "strong"
+    },
+    {
+      "from": 274,
+      "to": 275,
+      "text": "한",
+      "styles": "strong"
+    },
+    {
+      "from": 275,
+      "to": 276,
+      "text": " ",
+      "styles": "strong"
+    },
+    {
+      "from": 276,
+      "to": 277,
+      "text": "긴",
+      "styles": "strong"
+    },
+    {
+      "from": 277,
+      "to": 278,
+      "text": " ",
+      "styles": "strong"
+    },
+    {
+      "from": 278,
+      "to": 279,
+      "text": "행",
+      "styles": "strong"
+    },
+    {
+      "from": 279,
+      "to": 280,
+      "text": " ",
+      "styles": "strong"
+    },
+    {
+      "from": 280,
+      "to": 281,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 281,
+      "to": 282,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 282,
+      "to": 283,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 283,
+      "to": 284,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 284,
+      "to": 285,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 285,
+      "to": 286,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 286,
+      "to": 287,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 287,
+      "to": 288,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 288,
+      "to": 289,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 289,
+      "to": 290,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 290,
+      "to": 291,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 291,
+      "to": 292,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 292,
+      "to": 293,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 293,
+      "to": 294,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 294,
+      "to": 295,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 295,
+      "to": 296,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 296,
+      "to": 297,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 297,
+      "to": 298,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 298,
+      "to": 299,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 299,
+      "to": 300,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 300,
+      "to": 301,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 301,
+      "to": 302,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 302,
+      "to": 303,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 303,
+      "to": 304,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 304,
+      "to": 305,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 305,
+      "to": 306,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 306,
+      "to": 307,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 307,
+      "to": 308,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 308,
+      "to": 309,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 309,
+      "to": 310,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 310,
+      "to": 311,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 311,
+      "to": 312,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 312,
+      "to": 313,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 313,
+      "to": 314,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 314,
+      "to": 315,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 315,
+      "to": 316,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 316,
+      "to": 317,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 317,
+      "to": 318,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 318,
+      "to": 319,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 319,
+      "to": 320,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 320,
+      "to": 321,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 321,
+      "to": 322,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 322,
+      "to": 323,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 323,
+      "to": 324,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 324,
+      "to": 325,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 325,
+      "to": 326,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 326,
+      "to": 327,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 327,
+      "to": 328,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 328,
+      "to": 329,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 329,
+      "to": 330,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 330,
+      "to": 331,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 331,
+      "to": 332,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 332,
+      "to": 333,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 333,
+      "to": 334,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 334,
+      "to": 335,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 335,
+      "to": 336,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 336,
+      "to": 337,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 337,
+      "to": 338,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 338,
+      "to": 339,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 339,
+      "to": 340,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 340,
+      "to": 341,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 341,
+      "to": 342,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 342,
+      "to": 343,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 343,
+      "to": 344,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 344,
+      "to": 345,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 345,
+      "to": 346,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 346,
+      "to": 347,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 347,
+      "to": 348,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 348,
+      "to": 349,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 349,
+      "to": 350,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 350,
+      "to": 351,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 351,
+      "to": 352,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 352,
+      "to": 353,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 353,
+      "to": 354,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 354,
+      "to": 355,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 355,
+      "to": 356,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 356,
+      "to": 357,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 357,
+      "to": 358,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 358,
+      "to": 359,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 359,
+      "to": 360,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 360,
+      "to": 361,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 361,
+      "to": 362,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 362,
+      "to": 363,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 363,
+      "to": 364,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 364,
+      "to": 365,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 365,
+      "to": 366,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 366,
+      "to": 367,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 367,
+      "to": 368,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 368,
+      "to": 369,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 369,
+      "to": 370,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 370,
+      "to": 371,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 371,
+      "to": 372,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 372,
+      "to": 373,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 373,
+      "to": 374,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 374,
+      "to": 375,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 375,
+      "to": 376,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 376,
+      "to": 377,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 377,
+      "to": 378,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 378,
+      "to": 379,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 379,
+      "to": 380,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 380,
+      "to": 381,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 381,
+      "to": 382,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 382,
+      "to": 383,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 383,
+      "to": 384,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 384,
+      "to": 385,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 385,
+      "to": 386,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 386,
+      "to": 387,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 387,
+      "to": 388,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 388,
+      "to": 389,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 389,
+      "to": 390,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 390,
+      "to": 391,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 391,
+      "to": 392,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 392,
+      "to": 393,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 393,
+      "to": 394,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 394,
+      "to": 395,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 395,
+      "to": 396,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 396,
+      "to": 397,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 397,
+      "to": 398,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 398,
+      "to": 399,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 399,
+      "to": 400,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 400,
+      "to": 401,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 401,
+      "to": 402,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 402,
+      "to": 403,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 403,
+      "to": 404,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 404,
+      "to": 405,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 405,
+      "to": 406,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 406,
+      "to": 407,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 407,
+      "to": 408,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 408,
+      "to": 409,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 409,
+      "to": 410,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 410,
+      "to": 411,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 411,
+      "to": 412,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 412,
+      "to": 413,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 413,
+      "to": 414,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 414,
+      "to": 415,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 415,
+      "to": 416,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 416,
+      "to": 417,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 417,
+      "to": 418,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 418,
+      "to": 419,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 419,
+      "to": 420,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 420,
+      "to": 421,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 421,
+      "to": 422,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 422,
+      "to": 423,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 423,
+      "to": 424,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 424,
+      "to": 425,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 425,
+      "to": 426,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 426,
+      "to": 427,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 427,
+      "to": 428,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 428,
+      "to": 429,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 429,
+      "to": 430,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 430,
+      "to": 431,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 431,
+      "to": 432,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 432,
+      "to": 433,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 433,
+      "to": 434,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 434,
+      "to": 435,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 435,
+      "to": 436,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 436,
+      "to": 437,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 437,
+      "to": 438,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 438,
+      "to": 439,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 439,
+      "to": 440,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 440,
+      "to": 441,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 441,
+      "to": 442,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 442,
+      "to": 443,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 443,
+      "to": 444,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 444,
+      "to": 445,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 445,
+      "to": 446,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 446,
+      "to": 447,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 447,
+      "to": 448,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 448,
+      "to": 449,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 449,
+      "to": 450,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 450,
+      "to": 451,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 451,
+      "to": 452,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 452,
+      "to": 453,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 453,
+      "to": 454,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 454,
+      "to": 455,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 455,
+      "to": 456,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 456,
+      "to": 457,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 457,
+      "to": 458,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 458,
+      "to": 459,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 459,
+      "to": 460,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 460,
+      "to": 461,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 461,
+      "to": 462,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 462,
+      "to": 463,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 463,
+      "to": 464,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 464,
+      "to": 465,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 465,
+      "to": 466,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 466,
+      "to": 467,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 467,
+      "to": 468,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 468,
+      "to": 469,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 469,
+      "to": 470,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 470,
+      "to": 471,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 471,
+      "to": 472,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 472,
+      "to": 473,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 473,
+      "to": 474,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 474,
+      "to": 475,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 475,
+      "to": 476,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 476,
+      "to": 477,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 477,
+      "to": 478,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 478,
+      "to": 479,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 479,
+      "to": 480,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 480,
+      "to": 481,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 481,
+      "to": 482,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 482,
+      "to": 483,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 483,
+      "to": 484,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 484,
+      "to": 485,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 485,
+      "to": 486,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 486,
+      "to": 487,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 487,
+      "to": 488,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 488,
+      "to": 489,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 489,
+      "to": 490,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 490,
+      "to": 491,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 491,
+      "to": 492,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 492,
+      "to": 493,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 493,
+      "to": 494,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 494,
+      "to": 495,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 495,
+      "to": 496,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 496,
+      "to": 497,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 497,
+      "to": 498,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 498,
+      "to": 499,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 499,
+      "to": 500,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 500,
+      "to": 501,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 501,
+      "to": 502,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 502,
+      "to": 503,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 503,
+      "to": 504,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 504,
+      "to": 505,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 505,
+      "to": 506,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 506,
+      "to": 507,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 507,
+      "to": 508,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 508,
+      "to": 509,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 509,
+      "to": 510,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 510,
+      "to": 511,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 511,
+      "to": 512,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 512,
+      "to": 513,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 513,
+      "to": 514,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 514,
+      "to": 515,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 515,
+      "to": 516,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 516,
+      "to": 517,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 517,
+      "to": 518,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 518,
+      "to": 519,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 519,
+      "to": 520,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 520,
+      "to": 521,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 521,
+      "to": 522,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 522,
+      "to": 523,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 523,
+      "to": 524,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 524,
+      "to": 525,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 525,
+      "to": 526,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 526,
+      "to": 527,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 527,
+      "to": 528,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 528,
+      "to": 529,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 529,
+      "to": 530,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 530,
+      "to": 531,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 531,
+      "to": 532,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 532,
+      "to": 533,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 533,
+      "to": 534,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 534,
+      "to": 535,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 535,
+      "to": 536,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 536,
+      "to": 537,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 537,
+      "to": 538,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 538,
+      "to": 539,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 539,
+      "to": 540,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 540,
+      "to": 541,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 541,
+      "to": 542,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 542,
+      "to": 543,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 543,
+      "to": 544,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 544,
+      "to": 545,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 545,
+      "to": 546,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 546,
+      "to": 547,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 547,
+      "to": 548,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 548,
+      "to": 549,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 549,
+      "to": 550,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 550,
+      "to": 551,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 551,
+      "to": 552,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 552,
+      "to": 553,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 553,
+      "to": 554,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 554,
+      "to": 555,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 555,
+      "to": 556,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 556,
+      "to": 557,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 557,
+      "to": 558,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 558,
+      "to": 559,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 559,
+      "to": 560,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 560,
+      "to": 561,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 561,
+      "to": 562,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 562,
+      "to": 563,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 563,
+      "to": 564,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 564,
+      "to": 565,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 565,
+      "to": 566,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 566,
+      "to": 567,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 567,
+      "to": 568,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 568,
+      "to": 569,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 569,
+      "to": 570,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 570,
+      "to": 571,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 571,
+      "to": 572,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 572,
+      "to": 573,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 573,
+      "to": 574,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 574,
+      "to": 575,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 575,
+      "to": 576,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 577,
+      "to": 578,
+      "text": "<",
+      "styles": "strong"
+    },
+    {
+      "from": 578,
+      "to": 579,
+      "text": "c",
+      "styles": "strong"
+    },
+    {
+      "from": 579,
+      "to": 580,
+      "text": "o",
+      "styles": "strong"
+    },
+    {
+      "from": 580,
+      "to": 581,
+      "text": "d",
+      "styles": "strong"
+    },
+    {
+      "from": 581,
+      "to": 582,
+      "text": "e",
+      "styles": "strong"
+    },
+    {
+      "from": 582,
+      "to": 583,
+      "text": " ",
+      "styles": "strong"
+    },
+    {
+      "from": 583,
+      "to": 584,
+      "text": "j",
+      "styles": "strong"
+    },
+    {
+      "from": 584,
+      "to": 585,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 585,
+      "to": 586,
+      "text": "v",
+      "styles": "strong"
+    },
+    {
+      "from": 586,
+      "to": 587,
+      "text": "a",
+      "styles": "strong"
+    },
+    {
+      "from": 587,
+      "to": 588,
+      "text": "s",
+      "styles": "strong"
+    },
+    {
+      "from": 588,
+      "to": 589,
+      "text": "c",
+      "styles": "strong"
+    },
+    {
+      "from": 589,
+      "to": 590,
+      "text": "r",
+      "styles": "strong"
+    },
+    {
+      "from": 590,
+      "to": 591,
+      "text": "i",
+      "styles": "strong"
+    },
+    {
+      "from": 591,
+      "to": 592,
+      "text": "p",
+      "styles": "strong"
+    },
+    {
+      "from": 592,
+      "to": 593,
+      "text": "t",
+      "styles": "strong"
+    },
+    {
+      "from": 594,
+      "to": 595,
+      "text": "닫",
+      "styles": "strong"
+    },
+    {
+      "from": 595,
+      "to": 596,
+      "text": "히",
+      "styles": "strong"
+    },
+    {
+      "from": 596,
+      "to": 597,
+      "text": "지",
+      "styles": "strong"
+    },
+    {
+      "from": 597,
+      "to": 598,
+      "text": " ",
+      "styles": "strong"
+    },
+    {
+      "from": 598,
+      "to": 599,
+      "text": "않",
+      "styles": "strong"
+    },
+    {
+      "from": 599,
+      "to": 600,
+      "text": "은",
+      "styles": "strong"
+    },
+    {
+      "from": 600,
+      "to": 601,
+      "text": " ",
+      "styles": "strong"
+    },
+    {
+      "from": 601,
+      "to": 602,
+      "text": "코",
+      "styles": "strong"
+    },
+    {
+      "from": 602,
+      "to": 603,
+      "text": "드",
+      "styles": "strong"
+    },
+    {
+      "from": 603,
+      "to": 604,
+      "text": " ",
+      "styles": "strong"
+    },
+    {
+      "from": 604,
+      "to": 605,
+      "text": "블",
+      "styles": "strong"
+    },
+    {
+      "from": 605,
+      "to": 606,
+      "text": "록",
+      "styles": "strong"
+    }
+  ],
+  "version": 1
+}

@@ -1,0 +1,156 @@
+{
+  "fixture": "plugins/mathjax.txt",
+  "tokens": [
+    {
+      "from": 0,
+      "to": 6,
+      "text": "<math>",
+      "styles": "tag"
+    },
+    {
+      "from": 6,
+      "to": 7,
+      "text": "x",
+      "styles": null
+    },
+    {
+      "from": 7,
+      "to": 8,
+      "text": "^",
+      "styles": null
+    },
+    {
+      "from": 8,
+      "to": 9,
+      "text": "2",
+      "styles": null
+    },
+    {
+      "from": 9,
+      "to": 10,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 10,
+      "to": 11,
+      "text": "+",
+      "styles": null
+    },
+    {
+      "from": 11,
+      "to": 12,
+      "text": " ",
+      "styles": null
+    },
+    {
+      "from": 12,
+      "to": 13,
+      "text": "y",
+      "styles": null
+    },
+    {
+      "from": 13,
+      "to": 14,
+      "text": "^",
+      "styles": null
+    },
+    {
+      "from": 14,
+      "to": 15,
+      "text": "2",
+      "styles": null
+    },
+    {
+      "from": 15,
+      "to": 22,
+      "text": "</math>",
+      "styles": "tag"
+    },
+    {
+      "from": 23,
+      "to": 29,
+      "text": "<MATH>",
+      "styles": "tag"
+    },
+    {
+      "from": 29,
+      "to": 30,
+      "text": "\\",
+      "styles": null
+    },
+    {
+      "from": 30,
+      "to": 31,
+      "text": "\\",
+      "styles": null
+    },
+    {
+      "from": 31,
+      "to": 32,
+      "text": "f",
+      "styles": null
+    },
+    {
+      "from": 32,
+      "to": 33,
+      "text": "r",
+      "styles": null
+    },
+    {
+      "from": 33,
+      "to": 34,
+      "text": "a",
+      "styles": null
+    },
+    {
+      "from": 34,
+      "to": 35,
+      "text": "c",
+      "styles": null
+    },
+    {
+      "from": 35,
+      "to": 36,
+      "text": "{",
+      "styles": null
+    },
+    {
+      "from": 36,
+      "to": 37,
+      "text": "1",
+      "styles": null
+    },
+    {
+      "from": 37,
+      "to": 38,
+      "text": "}",
+      "styles": null
+    },
+    {
+      "from": 38,
+      "to": 39,
+      "text": "{",
+      "styles": null
+    },
+    {
+      "from": 39,
+      "to": 40,
+      "text": "2",
+      "styles": null
+    },
+    {
+      "from": 40,
+      "to": 41,
+      "text": "}",
+      "styles": null
+    },
+    {
+      "from": 41,
+      "to": 48,
+      "text": "</MATH>",
+      "styles": "tag"
+    }
+  ],
+  "version": 1
+}

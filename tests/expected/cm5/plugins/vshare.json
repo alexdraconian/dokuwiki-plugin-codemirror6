@@ -1,0 +1,228 @@
+{
+  "fixture": "plugins/vshare.txt",
+  "tokens": [
+    {
+      "from": 0,
+      "to": 10,
+      "text": "{{youtube>",
+      "styles": "tag"
+    },
+    {
+      "from": 10,
+      "to": 11,
+      "text": "v",
+      "styles": "link"
+    },
+    {
+      "from": 11,
+      "to": 12,
+      "text": "i",
+      "styles": "link"
+    },
+    {
+      "from": 12,
+      "to": 13,
+      "text": "d",
+      "styles": "link"
+    },
+    {
+      "from": 13,
+      "to": 14,
+      "text": "e",
+      "styles": "link"
+    },
+    {
+      "from": 14,
+      "to": 15,
+      "text": "o",
+      "styles": "link"
+    },
+    {
+      "from": 15,
+      "to": 16,
+      "text": "-",
+      "styles": "link"
+    },
+    {
+      "from": 16,
+      "to": 17,
+      "text": "i",
+      "styles": "link"
+    },
+    {
+      "from": 17,
+      "to": 18,
+      "text": "d",
+      "styles": "link"
+    },
+    {
+      "from": 18,
+      "to": 20,
+      "text": "}}",
+      "styles": "tag"
+    },
+    {
+      "from": 21,
+      "to": 29,
+      "text": "{{vimeo>",
+      "styles": "tag"
+    },
+    {
+      "from": 29,
+      "to": 30,
+      "text": "c",
+      "styles": "link"
+    },
+    {
+      "from": 30,
+      "to": 31,
+      "text": "l",
+      "styles": "link"
+    },
+    {
+      "from": 31,
+      "to": 32,
+      "text": "i",
+      "styles": "link"
+    },
+    {
+      "from": 32,
+      "to": 33,
+      "text": "p",
+      "styles": "link"
+    },
+    {
+      "from": 33,
+      "to": 34,
+      "text": "-",
+      "styles": "link"
+    },
+    {
+      "from": 34,
+      "to": 35,
+      "text": "i",
+      "styles": "link"
+    },
+    {
+      "from": 35,
+      "to": 36,
+      "text": "d",
+      "styles": "link"
+    },
+    {
+      "from": 36,
+      "to": 37,
+      "text": "?",
+      "styles": null
+    },
+    {
+      "from": 37,
+      "to": 38,
+      "text": "a",
+      "styles": "keyword"
+    },
+    {
+      "from": 38,
+      "to": 39,
+      "text": "u",
+      "styles": "keyword"
+    },
+    {
+      "from": 39,
+      "to": 40,
+      "text": "t",
+      "styles": "keyword"
+    },
+    {
+      "from": 40,
+      "to": 41,
+      "text": "o",
+      "styles": "keyword"
+    },
+    {
+      "from": 41,
+      "to": 42,
+      "text": "p",
+      "styles": "keyword"
+    },
+    {
+      "from": 42,
+      "to": 43,
+      "text": "l",
+      "styles": "keyword"
+    },
+    {
+      "from": 43,
+      "to": 44,
+      "text": "a",
+      "styles": "keyword"
+    },
+    {
+      "from": 44,
+      "to": 45,
+      "text": "y",
+      "styles": "keyword"
+    },
+    {
+      "from": 45,
+      "to": 46,
+      "text": "=",
+      "styles": "keyword"
+    },
+    {
+      "from": 46,
+      "to": 47,
+      "text": "1",
+      "styles": "keyword"
+    },
+    {
+      "from": 47,
+      "to": 48,
+      "text": "|",
+      "styles": null
+    },
+    {
+      "from": 48,
+      "to": 49,
+      "text": "동",
+      "styles": "string"
+    },
+    {
+      "from": 49,
+      "to": 50,
+      "text": "영",
+      "styles": "string"
+    },
+    {
+      "from": 50,
+      "to": 51,
+      "text": "상",
+      "styles": "string"
+    },
+    {
+      "from": 51,
+      "to": 52,
+      "text": " ",
+      "styles": "string"
+    },
+    {
+      "from": 52,
+      "to": 53,
+      "text": "제",
+      "styles": "string"
+    },
+    {
+      "from": 53,
+      "to": 54,
+      "text": "목",
+      "styles": "string"
+    },
+    {
+      "from": 54,
+      "to": 56,
+      "text": "}}",
+      "styles": "tag"
+    }
+  ],
+  "version": 1
+}

@@ -1,0 +1,282 @@
+{
+  "fixture": "plugins/include.txt",
+  "tokens": [
+    {
+      "from": 0,
+      "to": 7,
+      "text": "{{page>",
+      "styles": "tag"
+    },
+    {
+      "from": 7,
+      "to": 8,
+      "text": "f",
+      "styles": "link"
+    },
+    {
+      "from": 8,
+      "to": 9,
+      "text": "o",
+      "styles": "link"
+    },
+    {
+      "from": 9,
+      "to": 10,
+      "text": "o",
+      "styles": "link"
+    },
+    {
+      "from": 10,
+      "to": 11,
+      "text": "&",
+      "styles": null
+    },
+    {
+      "from": 11,
+      "to": 12,
+      "text": "p",
+      "styles": "keyword"
+    },
+    {
+      "from": 12,
+      "to": 13,
+      "text": "a",
+      "styles": "keyword"
+    },
+    {
+      "from": 13,
+      "to": 14,
+      "text": "r",
+      "styles": "keyword"
+    },
+    {
+      "from": 14,
+      "to": 15,
+      "text": "a",
+      "styles": "keyword"
+    },
+    {
+      "from": 15,
+      "to": 16,
+      "text": "m",
+      "styles": "keyword"
+    },
+    {
+      "from": 16,
+      "to": 17,
+      "text": "=",
+      "styles": "keyword"
+    },
+    {
+      "from": 17,
+      "to": 18,
+      "text": "v",
+      "styles": "keyword"
+    },
+    {
+      "from": 18,
+      "to": 19,
+      "text": "a",
+      "styles": "keyword"
+    },
+    {
+      "from": 19,
+      "to": 20,
+      "text": "l",
+      "styles": "keyword"
+    },
+    {
+      "from": 20,
+      "to": 21,
+      "text": "u",
+      "styles": "keyword"
+    },
+    {
+      "from": 21,
+      "to": 22,
+      "text": "e",
+      "styles": "keyword"
+    },
+    {
+      "from": 22,
+      "to": 24,
+      "text": "}}",
+      "styles": "tag"
+    },
+    {
+      "from": 25,
+      "to": 35,
+      "text": "{{section>",
+      "styles": "tag"
+    },
+    {
+      "from": 35,
+      "to": 36,
+      "text": "b",
+      "styles": "link"
+    },
+    {
+      "from": 36,
+      "to": 37,
+      "text": "a",
+      "styles": "link"
+    },
+    {
+      "from": 37,
+      "to": 38,
+      "text": "r",
+      "styles": "link"
+    },
+    {
+      "from": 38,
+      "to": 40,
+      "text": "}}",
+      "styles": "tag"
+    },
+    {
+      "from": 41,
+      "to": 53,
+      "text": "{{namespace>",
+      "styles": "tag"
+    },
+    {
+      "from": 53,
+      "to": 54,
+      "text": "d",
+      "styles": "link"
+    },
+    {
+      "from": 54,
+      "to": 55,
+      "text": "o",
+      "styles": "link"
+    },
+    {
+      "from": 55,
+      "to": 56,
+      "text": "c",
+      "styles": "link"
+    },
+    {
+      "from": 56,
+      "to": 57,
+      "text": "s",
+      "styles": "link"
+    },
+    {
+      "from": 57,
+      "to": 59,
+      "text": "}}",
+      "styles": "tag"
+    },
+    {
+      "from": 60,
+      "to": 71,
+      "text": "{{tagtopic>",
+      "styles": "tag"
+    },
+    {
+      "from": 71,
+      "to": 72,
+      "text": "t",
+      "styles": "link"
+    },
+    {
+      "from": 72,
+      "to": 73,
+      "text": "o",
+      "styles": "link"
+    },
+    {
+      "from": 73,
+      "to": 74,
+      "text": "p",
+      "styles": "link"
+    },
+    {
+      "from": 74,
+      "to": 75,
+      "text": "i",
+      "styles": "link"
+    },
+    {
+      "from": 75,
+      "to": 76,
+      "text": "c",
+      "styles": "link"
+    },
+    {
+      "from": 76,
+      "to": 77,
+      "text": "&",
+      "styles": null
+    },
+    {
+      "from": 77,
+      "to": 78,
+      "text": "s",
+      "styles": "keyword"
+    },
+    {
+      "from": 78,
+      "to": 79,
+      "text": "o",
+      "styles": "keyword"
+    },
+    {
+      "from": 79,
+      "to": 80,
+      "text": "r",
+      "styles": "keyword"
+    },
+    {
+      "from": 80,
+      "to": 81,
+      "text": "t",
+      "styles": "keyword"
+    },
+    {
+      "from": 81,
+      "to": 82,
+      "text": "=",
+      "styles": "keyword"
+    },
+    {
+      "from": 82,
+      "to": 83,
+      "text": " ",
+      "styles": "keyword"
+    },
+    {
+      "from": 83,
+      "to": 84,
+      "text": "d",
+      "styles": "keyword"
+    },
+    {
+      "from": 84,
+      "to": 85,
+      "text": "a",
+      "styles": "keyword"
+    },
+    {
+      "from": 85,
+      "to": 86,
+      "text": "t",
+      "styles": "keyword"
+    },
+    {
+      "from": 86,
+      "to": 87,
+      "text": "e",
+      "styles": "keyword"
+    },
+    {
+      "from": 87,
+      "to": 89,
+      "text": "}}",
+      "styles": "tag"
+    }
+  ],
+  "version": 1
+}
