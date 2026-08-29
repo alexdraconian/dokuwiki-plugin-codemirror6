@@ -5,7 +5,7 @@ This plugin adds a CodeMirror editor and syntax highlighting to DokuWiki. It is 
 ## Precautions
 
 * This project is vibe-coded with OpenAI GPT-5.6. Use at your own risk, as I couldn't fully verify it by myself.
-* This plugin implements other plugin's syntax by itself; This is intentional choice, since I can't revise all other plugins to support this. (I initially did this for my private wiki, with some additional features.)
+* This plugin implements other plugin's syntax by itself; This is intentional choice, since I didn't wanted to revise all other plugins to support this. (I did this for my private wiki, with some additional features, so I wanted to keep change scope minimal.)
 * Enabling pageid autocompletion may make your wiki slow, if your wiki have many pages or many active users.
 * In case of MathJax plugin, this plugin does not support default `$` and `$$` syntax. Instead, you have to add following code to settings, changing syntax to `<math></math>` and `<MATH></MATH>`. Don't forget to change plugin's `mathtags` setting to `math,MATH`.
 
@@ -15,8 +15,8 @@ MathJax.Hub.Config({
         inlineMath: [ ["<math>","</math>"] ],
         displayMath: [ ["<MATH>","</MATH>"] ],
         processEscapes: true
-    },
-    ...
+    }
+    // rest of settings...
 }
 ```
 
@@ -28,9 +28,9 @@ MathJax.Hub.Config({
 - Moved the complete 159-entry `codeModes` language metadata and aliases into an explicit registry. The initial editor bundle is self-contained; larger embedded language implementations are loaded as same-origin optional chunks with deterministic fallback and retry behavior.
 - Replaced `CodeMirror.runMode()` read-only highlighting with a one-shot CodeMirror 6 highlighter for `pre.code` blocks. Rendering is text-node based, idempotent, and safe for HTML-like or script-like source text.
 - Rebuilt settings around CodeMirror 6 compartments. Existing `cm-*` cookies, font size, themes, keymaps, brackets, line numbers, active line, invisibles, syntax highlighting, and native-editor switching are retained.
-- Added CodeMirror 6 page-name autocomplete to the editor, using the configured DokuWiki page list and preserving page IDs and titles in the completion UI.
+- Added CodeMirror 6 page-name autocomplete to the editor, using the configured DokuWiki page list and preserving page IDs and titles in the completion UI. It uses ajax to bring page IDs from server, respecting page's ACL permissions.
 - Added document-wide CodeMirror search and replace. `Ctrl+F` opens the editor search panel, which searches the full document; regular expressions, case sensitivity, whole-word matching, next/previous navigation, and replacement are supported.
-- Replaced the old Grunt/CodeMirror 5 production build with TypeScript, esbuild, and Less. Releases contain only the DokuWiki PHP integration, CM6 bundles, source maps, language chunks, language files, and required metadata/assets; development files and `node_modules` are excluded.
+- Replaced the old Grunt/CodeMirror 5 production build with TypeScript, esbuild, and Less.
 
 ## Installation
 
@@ -91,7 +91,7 @@ dist/cm6/languages/*.js
 dist/cm6/languages/*.js.map
 ```
 
-`npm run dist` rebuilds `dist/` from scratch and creates `dokuwiki-plugin-codemirror6.tar.gz`. This clean build is intentional: obsolete CodeMirror 5 scripts, keymaps, modes, and styles cannot be carried into a release.
+`npm run dist` rebuilds `dist/` from scratch and creates `dokuwiki-plugin-codemirror6.tar.gz`.
 
 The editor uses CodeMirror's document model for search, so browser `Ctrl+F` is not required to inspect content outside the visible editor viewport. In an edit page, use `Ctrl+F` to open the search panel, `F3` or `Ctrl+G` for the next match, and `Shift+F3` for the previous match.
 
@@ -107,7 +107,7 @@ DOKUWIKI_CDP_URL=http://localhost:9222 \
 npm run test:dokuwiki
 ```
 
-The verified environment is DokuWiki 2025-05-14b “Librarian” with PHP 8.2.13. The test covers editor lifecycle, saving, preview, selection/toolbar bridges, settings reload, native-editor round trips, static code highlighting, page autocomplete, source/size controls, and browser console errors. DokuWiki 2026-07-14a “Mort” has not been certified by this migration.
+The verified environment is DokuWiki 2025-05-14b “Librarian” with PHP 8.2.30. The test covers editor lifecycle, saving, preview, selection/toolbar bridges, settings reload, native-editor round trips, static code highlighting, page autocomplete, source/size controls, and browser console errors. DokuWiki 2026-07-14a “Mort” has not been certified by this migration.
 
 ## Extending syntax and languages
 
@@ -121,10 +121,6 @@ This plugin is distributed under the GNU General Public License, version 2 or la
 
 Copyright (C) 2014-2017 Albert Gasset.
 
-CodeMirror 6 migration and current maintenance: AlexDraconian.
+CodeMirror 6 migration: AlexDraconian.
 
-This repository is a substantially modified work based on the original
-[DokuWiki CodeMirror plugin](https://github.com/albertgasset/dokuwiki-plugin-codemirror).
-The original attribution and migration summary are also recorded in
-[NOTICE](NOTICE). Licenses for packages included in the production bundles
-are listed in [THIRD_PARTY_NOTICES.txt](THIRD_PARTY_NOTICES.txt).
+This repository is a substantially modified work based on the original [DokuWiki CodeMirror plugin](https://github.com/albertgasset/dokuwiki-plugin-codemirror). The original attribution and migration summary are also recorded in[NOTICE](NOTICE). Licenses for packages included in the production bundles are listed in [THIRD_PARTY_NOTICES.txt](THIRD_PARTY_NOTICES.txt).
