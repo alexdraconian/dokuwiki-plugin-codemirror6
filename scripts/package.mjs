@@ -50,7 +50,7 @@ async function collectReleaseFiles() {
     const files = [
         "LICENSE",
         "NOTICE",
-        "README",
+        "README.md",
         "THIRD_PARTY_NOTICES.txt",
         "action.php",
         "plugin.info.txt",
