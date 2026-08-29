@@ -9,7 +9,7 @@ This plugin adds a CodeMirror editor and syntax highlighting to DokuWiki. It is 
 * Enabling pageid autocompletion may make your wiki slow, if your wiki have many pages or many active users.
 * In case of MathJax plugin, this plugin does not support default `$` and `$$` syntax. Instead, you have to add following code to settings, changing syntax to `<math></math>` and `<MATH></MATH>`. Don't forget to change plugin's `mathtags` setting to `math,MATH`.
 
-```json
+```php
 MathJax.Hub.Config({
     tex2jax: {
         inlineMath: [ ["<math>","</math>"] ],
