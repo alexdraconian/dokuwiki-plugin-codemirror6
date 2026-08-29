@@ -123,6 +123,7 @@ export function mountTextArea(options: TextareaAdapterOptions): TextareaAdapter 
     };
     const host = textarea.ownerDocument.createElement("div");
     host.className = options.className || "cm6-editor-host";
+    host.classList.add("tex2jax_ignore");
     host.dataset.codemirror6 = "textarea-adapter";
     const height = heightFor(textarea, options);
     if (height) {

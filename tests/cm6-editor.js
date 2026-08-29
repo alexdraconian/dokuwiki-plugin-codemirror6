@@ -82,6 +82,7 @@ function testMountInputSubmitDestroyRecreate() {
     var adapter = runtime.mountTextArea({textarea: textarea});
     assert.strictEqual(textarea.style.display, "none");
     assert.strictEqual(adapter.host.parentNode, form);
+    assert.ok(adapter.host.classList.contains("tex2jax_ignore"));
     assert.ok(adapter.host.querySelector(".cm-editor"));
     assert.strictEqual(adapter.host.style.height, "200px");
     assert.strictEqual(adapter.editor.view.state.doc.toString(), textarea.value);
