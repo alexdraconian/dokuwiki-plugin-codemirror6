@@ -211,26 +211,54 @@ async function main() {
     assert(existingSaved.url === existingPage && existingSaved.marker, "existing page save reaches rendered Librarian page");
 
     await openEdit();
-    await evaluate("document.querySelector('.cm-settings-button').click()");
-    await waitFor("!document.querySelector('.cm-settings-menu').hidden");
-    const menu = await evaluate("(() => { const rect = document.querySelector('.cm-settings-menu').getBoundingClientRect(); return {items: document.querySelectorAll('.cm-settings-menu button[data-setting]').length, dracula: Boolean(document.querySelector('.cm-settings-menu button[data-setting=theme][data-choice=dracula]')), groups: document.querySelectorAll('.cm-settings-menu button[data-submenu]').length, right: rect.right, bottom: rect.bottom, viewportWidth: innerWidth, viewportHeight: innerHeight}; })()");
+    await evaluate("document.querySelector('button[data-codemirror6-settings]').click()");
+    await waitFor("!document.querySelector('ul[data-codemirror6-settings]').hidden");
+    const desktopSearchAction = await evaluate("(() => { const item = document.querySelector('ul[data-codemirror6-settings] button[data-action=open-search]'); return {exists: Boolean(item), label: item?.textContent || '', disabled: Boolean(item?.disabled)}; })()");
+    assert(desktopSearchAction.exists && !desktopSearchAction.disabled, "settings menu exposes the same find-and-replace action on desktop");
+    await evaluate("document.querySelector('ul[data-codemirror6-settings] button[data-action=open-search]').click()");
+    await waitFor("Boolean(document.querySelector('.cm-search input[name=search]'))");
+    await evaluate("document.querySelector('.cm-search button[name=close]').click()");
+    await waitFor("!document.querySelector('.cm-search')");
+
+    await send("Emulation.setDeviceMetricsOverride", {
+        width: 390,
+        height: 844,
+        deviceScaleFactor: 1,
+        mobile: true,
+    });
+    await openEdit();
+    await evaluate("document.querySelector('button[data-codemirror6-settings]').click()");
+    await waitFor("!document.querySelector('ul[data-codemirror6-settings]').hidden");
+    const menu = await evaluate("(() => { const menu = document.querySelector('ul[data-codemirror6-settings]'); const rect = menu.getBoundingClientRect(); return {items: menu.querySelectorAll('button[data-setting]').length, dracula: Boolean(menu.querySelector('button[data-setting=theme][data-choice=dracula]')), groups: menu.querySelectorAll('button[data-submenu]').length, right: rect.right, bottom: rect.bottom, viewportWidth: innerWidth, viewportHeight: innerHeight}; })()");
     assert(menu.items >= 60 && menu.dracula && menu.groups === 3, "settings menu renders nested theme/font/keymap groups");
     assert(menu.right <= menu.viewportWidth && menu.bottom <= menu.viewportHeight, "root settings menu stays inside the viewport");
-    await evaluate("document.querySelector('.cm-settings-menu button[data-submenu=theme]').click()");
-    await waitFor("!document.querySelector('.cm-settings-submenu').hidden");
-    const submenu = await evaluate("(() => { const rect = document.querySelector('.cm-settings-submenu').getBoundingClientRect(); return {right: rect.right, bottom: rect.bottom, viewportWidth: innerWidth, viewportHeight: innerHeight}; })()");
+    const searchAction = await evaluate("(() => { const item = document.querySelector('ul[data-codemirror6-settings] button[data-action=open-search]'); return {exists: Boolean(item), label: item?.textContent || '', disabled: Boolean(item?.disabled)}; })()");
+    assert(searchAction.exists && !searchAction.disabled, "settings menu exposes an enabled find-and-replace action on mobile");
+    await evaluate("document.querySelector('ul[data-codemirror6-settings] button[data-action=open-search]').click()");
+    await waitFor("Boolean(document.querySelector('.cm-search input[name=search]'))");
+    const mobileSearch = await evaluate("(() => { const panel = document.querySelector('.cm-search'); const input = panel?.querySelector('input[name=search]'); const panelRect = panel?.getBoundingClientRect(); const inputRect = input?.getBoundingClientRect(); return {panelRight: panelRect?.right || 0, inputRight: inputRect?.right || 0, viewportWidth: innerWidth}; })()");
+    assert(mobileSearch.panelRight <= mobileSearch.viewportWidth && mobileSearch.inputRight <= mobileSearch.viewportWidth, "find-and-replace panel stays inside the mobile viewport");
+    await evaluate("document.querySelector('.cm-search button[name=close]').click()");
+    await waitFor("!document.querySelector('.cm-search')");
+    await send("Emulation.clearDeviceMetricsOverride");
+    await sleep(200);
+    await evaluate("document.querySelector('button[data-codemirror6-settings]').click()");
+    await waitFor("!document.querySelector('ul[data-codemirror6-settings]').hidden");
+    await evaluate("document.querySelector('ul[data-codemirror6-settings] button[data-submenu=theme]').click()");
+    await waitFor("!document.querySelector('ul[data-codemirror6-settings] .cm-settings-submenu').hidden");
+    const submenu = await evaluate("(() => { const rect = document.querySelector('ul[data-codemirror6-settings] .cm-settings-submenu').getBoundingClientRect(); return {right: rect.right, bottom: rect.bottom, viewportWidth: innerWidth, viewportHeight: innerHeight}; })()");
     assert(submenu.right <= submenu.viewportWidth && submenu.bottom <= submenu.viewportHeight, "nested settings menu stays inside the viewport");
-    await evaluate("document.querySelector('.cm-settings-submenu button[data-setting=theme][data-choice=dracula]').click()");
+    await evaluate("document.querySelector('ul[data-codemirror6-settings] .cm-settings-submenu button[data-setting=theme][data-choice=dracula]').click()");
     await sleep(600);
     const nativeBefore = await evaluate("window.__dokuWikiCodeMirror6.editor.settings.get('nativeeditor')");
     if (nativeBefore !== "1") {
-        await evaluate("document.querySelector('.cm-settings-menu button[data-setting=nativeeditor]').click()");
+        await evaluate("document.querySelector('ul[data-codemirror6-settings] .cm-settings-menu button[data-setting=nativeeditor]').click()");
         await sleep(600);
     }
     const nativeOn = await evaluate("(() => { const i = window.__dokuWikiCodeMirror6; const textarea = document.getElementById('wiki__text'); return {setting: i.editor.settings.get('nativeeditor'), hidden: i.editor.adapter.host.hidden, active: document.activeElement === textarea}; })()");
     assert(nativeOn.setting === "1" && nativeOn.hidden && nativeOn.active, "native editor mode hides CM6 and focuses textarea");
     await evaluate("(() => { const textarea = document.getElementById('wiki__text'); if (!textarea.value.includes('Stage 14 native roundtrip')) textarea.value += String.fromCharCode(10, 10) + 'Stage 14 native roundtrip'; return true; })()");
-    await evaluate("document.querySelector('.cm-settings-menu button[data-setting=nativeeditor]').click()");
+    await evaluate("document.querySelector('ul[data-codemirror6-settings] .cm-settings-menu button[data-setting=nativeeditor]').click()");
     await sleep(800);
     const nativeOff = await evaluate("(() => { const i = window.__dokuWikiCodeMirror6; const textarea = document.getElementById('wiki__text'); return {setting: i.editor.settings.get('nativeeditor'), hidden: i.editor.adapter.host.hidden, marker: i.editor.port.readValue().includes('Stage 14 native roundtrip'), equal: i.editor.port.readValue() === textarea.value}; })()");
     assert(nativeOff.setting === "0" && !nativeOff.hidden && nativeOff.marker && nativeOff.equal, "native editor round-trip restores CM6 text without loss");

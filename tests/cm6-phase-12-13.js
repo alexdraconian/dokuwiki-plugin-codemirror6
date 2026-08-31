@@ -196,9 +196,12 @@ async function testSettingsAndMenu() {
     secondSettings.dispose();
     secondEditor.destroy();
 
+    var searchOpened = 0;
     var menu = runtime.createDokuWikiSettingsMenu({
         document: dom.window.document,
         controller: settings,
+        onOpenSearch: function() { searchOpened += 1; },
+        searchLabel: "Find and replace",
     });
     assert.strictEqual(menu.button.getAttribute("aria-haspopup"), "menu");
     assert.strictEqual(menu.menu.getAttribute("role"), "menu");
@@ -216,10 +219,19 @@ async function testSettingsAndMenu() {
     assert.strictEqual(menu.menu.hidden, true);
     var native = menu.menu.querySelector("button[data-setting=nativeeditor]");
     var other = menu.menu.querySelector("button[data-setting=theme]");
+    var search = menu.menu.querySelector("button[data-action=open-search]");
+    assert.ok(search, "find-and-replace action was not rendered");
+    assert.strictEqual(search.disabled, true,
+        "find-and-replace action was not disabled in native editor mode");
     assert.strictEqual(native.disabled, false);
     assert.strictEqual(other.disabled, true);
     await settings.set("nativeeditor", "0");
     assert.strictEqual(other.disabled, false);
+    assert.strictEqual(search.disabled, false,
+        "find-and-replace action stayed disabled after returning to CM6");
+    search.click();
+    assert.strictEqual(searchOpened, 1,
+        "find-and-replace action did not invoke its callback");
     menu.destroy();
     settings.dispose();
     editor.destroy();

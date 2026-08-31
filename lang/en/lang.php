@@ -1,5 +1,6 @@
 <?php
 
+$lang['js']['findreplace'] = 'Find and replace';
 $lang['js']['setting_activeline'] = 'Highlight current line';
 $lang['js']['setting_closebrackets'] = 'Auto-close brackets';
 $lang['js']['setting_fontsize'] = 'Font size';

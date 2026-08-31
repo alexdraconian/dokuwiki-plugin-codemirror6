@@ -1,6 +1,6 @@
 base   codemirror6
 author AlexDraconian
-date   2026-08-29
+date   2026-08-31
 name   CodeMirror6 plugin
 desc   CodeMirror 6 editor with DokuWiki syntax highlighting
 url    https://github.com/AlexDraconian/dokuwiki-plugin-codemirror6

@@ -22,6 +22,7 @@ import {
 import {
     createDokuWikiLanguage,
 } from "../language/dokuwiki/stream-parser";
+import {openSearchPanel} from "@codemirror/search";
 import {
     mountDokuWikiEditor,
     type DokuWikiWindow,
@@ -123,6 +124,12 @@ function pageLabels(
         }
     }
     return result;
+}
+
+function pageSearchLabel(window: DokuWikiPageWindow): string | undefined {
+    const labels = window.LANG?.plugins?.codemirror6 ?? window.LANG?.plugins?.codemirror;
+    const label = labels?.findreplace;
+    return typeof label === "string" ? label : undefined;
 }
 
 function textareaSelection(textarea: HTMLTextAreaElement): {
@@ -297,6 +304,12 @@ export function startDokuWikiPage(
         document,
         iconURL: config.iconURL || undefined,
         labels: pageLabels(dokuWindow),
+        searchLabel: pageSearchLabel(dokuWindow),
+        onOpenSearch: () => {
+            if (editor) {
+                openSearchPanel(editor.adapter.editor.view);
+            }
+        },
     }) : null;
     const staticHighlighter = config.codesyntax ?
         createStaticCodeHighlighter(document, registry, {enabled: true}) : null;

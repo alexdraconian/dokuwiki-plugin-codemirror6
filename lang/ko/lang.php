@@ -1,5 +1,6 @@
 <?php
 
+$lang['js']['findreplace'] = '찾기/바꾸기';
 $lang['js']['setting_activeline'] = '현재 줄 강조';
 $lang['js']['setting_closebrackets'] = '괄호 자동 닫기';
 $lang['js']['setting_fontsize'] = '글꼴 크기';

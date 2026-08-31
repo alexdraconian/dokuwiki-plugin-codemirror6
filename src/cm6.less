@@ -142,6 +142,8 @@
     display: inline-flex;
     justify-content: center;
     margin-left: 20px;
+    min-height: 32px;
+    min-width: 32px;
     padding: 2px;
 }
 
@@ -206,6 +208,7 @@
     border: 0;
     cursor: pointer;
     display: block;
+    min-height: 2em;
     padding: 4px 8px;
     text-align: left;
     white-space: nowrap;
@@ -227,4 +230,42 @@
 .cm-settings-menu button:disabled {
     cursor: default;
     opacity: .55;
+}
+
+.cm6-editor-host .cm-panel.cm-search {
+    box-sizing: border-box;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.cm6-editor-host .cm-panel.cm-search .cm-textfield {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+@media (max-width: 600px) {
+    .cm-settings-button {
+        min-height: 40px;
+        min-width: 40px;
+    }
+
+    .cm6-editor-host .cm-panel.cm-search {
+        padding-right: 30px;
+    }
+
+    .cm6-editor-host .cm-panel.cm-search .cm-textfield[name="search"],
+    .cm6-editor-host .cm-panel.cm-search .cm-textfield[name="replace"] {
+        display: block;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .cm6-editor-host .cm-panel.cm-search button {
+        min-height: 2.2em;
+    }
+
+    .cm6-editor-host .cm-panel.cm-search label {
+        display: inline-block;
+        margin-top: .5em;
+    }
 }

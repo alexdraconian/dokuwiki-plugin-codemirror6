@@ -395,6 +395,8 @@ export interface DokuWikiSettingsMenuOptions {
     readonly controller: EditorSettingsController;
     readonly iconURL?: string;
     readonly labels?: Partial<Record<DokuWikiSettingName, string>>;
+    readonly searchLabel?: string;
+    readonly onOpenSearch?: () => void;
     readonly parent?: Element | null;
 }
 
@@ -440,6 +442,7 @@ export function createDokuWikiSettingsMenu(
     const button = document.createElement("button");
     button.type = "button";
     button.className = "cm-settings-button";
+    button.dataset.codemirror6Settings = "true";
     button.setAttribute("aria-label", "CodeMirror settings");
     button.setAttribute("aria-haspopup", "menu");
     button.setAttribute("aria-expanded", "false");
@@ -454,9 +457,26 @@ export function createDokuWikiSettingsMenu(
 
     const menu = document.createElement("ul");
     menu.className = "cm-settings-menu";
+    menu.dataset.codemirror6Settings = "true";
     menu.setAttribute("role", "menu");
     menu.hidden = true;
     const menuSequence = ++settingsMenuSequence;
+
+    if (options.onOpenSearch) {
+        const searchItem = document.createElement("li");
+        searchItem.setAttribute("role", "none");
+        const searchButton = document.createElement("button");
+        searchButton.type = "button";
+        searchButton.dataset.action = "open-search";
+        searchButton.textContent = options.searchLabel ?? "Find and replace";
+        searchButton.setAttribute("role", "menuitem");
+        searchItem.append(searchButton);
+        menu.append(searchItem);
+
+        const separator = document.createElement("li");
+        separator.setAttribute("role", "separator");
+        menu.append(separator);
+    }
 
     function createSettingButton(
         name: DokuWikiSettingName,
@@ -608,6 +628,12 @@ export function createDokuWikiSettingsMenu(
 
     function render(): void {
         const native = options.controller.get("nativeeditor") === "1";
+        const searchButton = menu.querySelector<HTMLButtonElement>(
+            "button[data-action=open-search]",
+        );
+        if (searchButton) {
+            searchButton.disabled = native;
+        }
         menu.querySelectorAll<HTMLButtonElement>("button[data-setting]").forEach((item) => {
             const name = item.dataset.setting as DokuWikiSettingName;
             const choice = item.dataset.choice;
@@ -658,6 +684,9 @@ export function createDokuWikiSettingsMenu(
         if (!(target instanceof HTMLButtonElement)) {
             return;
         }
+        if (target.disabled) {
+            return;
+        }
         if (target.dataset.submenu) {
             const submenu = target.parentElement?.querySelector(
                 ":scope > ul.cm-settings-submenu",
@@ -669,6 +698,11 @@ export function createDokuWikiSettingsMenu(
                     closeSubmenu(submenu);
                 }
             }
+            return;
+        }
+        if (target.dataset.action === "open-search") {
+            close();
+            options.onOpenSearch?.();
             return;
         }
         const name = target.dataset.setting as DokuWikiSettingName | undefined;
