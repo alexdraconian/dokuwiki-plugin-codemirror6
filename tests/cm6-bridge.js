@@ -191,7 +191,7 @@ function testBridgeLifecycleAndSelection() {
     fixture.dom.window.close();
 }
 
-function testSubmitSaveAndIndentCommands() {
+async function testSubmitSaveAndIndentCommands() {
     var fixture = createFixture();
     var saveCount = 0;
     fixture.window.document.getElementById("edbtn__save").addEventListener(
@@ -202,8 +202,10 @@ function testSubmitSaveAndIndentCommands() {
         window: fixture.window,
         textarea: fixture.textarea,
         now: function() { return new Date(1000); },
+        settings: {cookies: null, config: {}},
     });
     var view = mounted.adapter.editor.view;
+    await mounted.settings.ready;
 
     mounted.adapter.editor.setValue("  - item");
     mounted.adapter.editor.setSelection(
@@ -211,6 +213,20 @@ function testSubmitSaveAndIndentCommands() {
     );
     dispatchKey(view, "Enter");
     assert.strictEqual(mounted.port.readValue(), "  - item\n  - ");
+
+    mounted.adapter.editor.setValue("  * item");
+    mounted.adapter.editor.setSelection(
+        require("@codemirror/state").EditorSelection.single(8, 8),
+    );
+    dispatchKey(view, "Enter");
+    assert.strictEqual(mounted.port.readValue(), "  * item\n  * ");
+
+    mounted.adapter.editor.setValue("  * ");
+    mounted.adapter.editor.setSelection(
+        require("@codemirror/state").EditorSelection.single(4, 4),
+    );
+    dispatchKey(view, "Enter");
+    assert.strictEqual(mounted.port.readValue(), "\n");
 
     mounted.adapter.editor.setValue("  - ");
     mounted.adapter.editor.setSelection(
@@ -242,6 +258,13 @@ function testSubmitSaveAndIndentCommands() {
     fixture.dom.window.close();
 }
 
-testBridgeLifecycleAndSelection();
-testSubmitSaveAndIndentCommands();
-console.log("CM6 DokuWiki bridge verification passed");
+async function main() {
+    testBridgeLifecycleAndSelection();
+    await testSubmitSaveAndIndentCommands();
+    console.log("CM6 DokuWiki bridge verification passed");
+}
+
+main().catch(function(error) {
+    console.error(error);
+    process.exitCode = 1;
+});

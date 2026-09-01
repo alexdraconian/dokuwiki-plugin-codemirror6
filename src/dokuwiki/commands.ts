@@ -10,7 +10,7 @@
  * Licensed under the GNU General Public License, version 2 or later.
  * See LICENSE in the project root.
  */
-import type { EditorState } from "@codemirror/state";
+import {Prec, type EditorState, type Extension} from "@codemirror/state";
 import type { KeyBinding } from "@codemirror/view";
 import { keymap, type EditorView } from "@codemirror/view";
 
@@ -83,7 +83,7 @@ export function runDokuWikiIndentCommand(
 export function createDokuWikiKeymap(
     onSaveRequest: () => void,
     isOuterMode: IsOuterMode = () => true,
-): ReturnType<typeof keymap.of> {
+): Extension {
     const bindings: KeyBinding[] = [
         {
             key: "Enter",
@@ -105,5 +105,7 @@ export function createDokuWikiKeymap(
             },
         },
     ];
-    return keymap.of(bindings);
+    // Run DokuWiki's context-sensitive list handling before the selected
+    // CodeMirror keymap's generic Enter, Space, and Backspace commands.
+    return Prec.highest(keymap.of(bindings));
 }
