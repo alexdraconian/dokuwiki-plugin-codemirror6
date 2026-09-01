@@ -44,12 +44,18 @@ function indentCommand(
 
     if (key === "Enter") {
         const isEmptyListItem = Boolean(match[2]) && match[0] === line.text;
+        const from = isEmptyListItem ? line.from : selection.head;
+        const insert = "\n" + (isEmptyListItem ? "" : match[0]);
         view.dispatch({
             changes: {
-                from: isEmptyListItem ? line.from : selection.head,
+                from,
                 to: selection.head,
-                insert: "\n" + (isEmptyListItem ? "" : match[0]),
+                insert,
             },
+            // CM6 maps an unspecified cursor at an insertion point to the
+            // start of inserted text. Place it after the new line prefix so
+            // typing can continue in the new list item immediately.
+            selection: {anchor: from + insert.length},
         });
     } else if (key === "Space") {
         view.dispatch({

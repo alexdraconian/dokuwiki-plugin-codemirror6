@@ -213,6 +213,7 @@ async function testSubmitSaveAndIndentCommands() {
     );
     dispatchKey(view, "Enter");
     assert.strictEqual(mounted.port.readValue(), "  - item\n  - ");
+    assert.strictEqual(view.state.selection.main.head, 13);
 
     mounted.adapter.editor.setValue("  * item");
     mounted.adapter.editor.setSelection(
@@ -220,6 +221,7 @@ async function testSubmitSaveAndIndentCommands() {
     );
     dispatchKey(view, "Enter");
     assert.strictEqual(mounted.port.readValue(), "  * item\n  * ");
+    assert.strictEqual(view.state.selection.main.head, 13);
 
     mounted.adapter.editor.setValue("  * ");
     mounted.adapter.editor.setSelection(
@@ -227,6 +229,7 @@ async function testSubmitSaveAndIndentCommands() {
     );
     dispatchKey(view, "Enter");
     assert.strictEqual(mounted.port.readValue(), "\n");
+    assert.strictEqual(view.state.selection.main.head, 1);
 
     mounted.adapter.editor.setValue("  - ");
     mounted.adapter.editor.setSelection(
