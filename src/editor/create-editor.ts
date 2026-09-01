@@ -11,6 +11,7 @@
  * See LICENSE in the project root.
  */
 import { history } from "@codemirror/commands";
+import { indentUnit } from "@codemirror/language";
 import { search } from "@codemirror/search";
 import {
     Compartment,
@@ -108,7 +109,10 @@ export function createEditor(options: CreateEditorOptions): EditorController {
             EditorState.allowMultipleSelections.of(
                 options.allowMultipleSelections ?? true,
             ),
-            compartments.tabSize.of(EditorState.tabSize.of(tabSize)),
+            compartments.tabSize.of([
+                EditorState.tabSize.of(tabSize),
+                indentUnit.of(" ".repeat(tabSize)),
+            ]),
             compartments.language.of([]),
             compartments.layout.of(layout(lineWrapping)),
             compartments.editability.of(editability(readOnly)),

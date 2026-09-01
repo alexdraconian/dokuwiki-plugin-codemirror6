@@ -11,6 +11,7 @@
  * See LICENSE in the project root.
  */
 import {EditorState, Prec, type Extension} from "@codemirror/state";
+import {indentLess} from "@codemirror/commands";
 import type { KeyBinding } from "@codemirror/view";
 import { keymap, type EditorView } from "@codemirror/view";
 
@@ -138,6 +139,11 @@ export function createDokuWikiKeymap(
         {
             key: "Tab",
             run: insertSpacesOrIndent,
+            preventDefault: true,
+        },
+        {
+            key: "Shift-Tab",
+            run: indentLess,
             preventDefault: true,
         },
         {

@@ -51,6 +51,7 @@ function dispatchKey(view, key, modifiers) {
         cancelable: true,
         ctrlKey: Boolean(modifiers && modifiers.ctrlKey),
         metaKey: Boolean(modifiers && modifiers.metaKey),
+        shiftKey: Boolean(modifiers && modifiers.shiftKey),
     });
     view.focus();
     view.contentDOM.dispatchEvent(event);
@@ -284,6 +285,31 @@ async function testTabIndentation() {
     dispatchKey(mounted.adapter.editor.view, "Tab");
     assert.strictEqual(mounted.adapter.getValue(), "    one\n    two\nthree",
         "Tab did not indent every selected line with spaces");
+    dispatchKey(mounted.adapter.editor.view, "Tab", {shiftKey: true});
+    assert.strictEqual(mounted.adapter.getValue(), "one\ntwo\nthree",
+        "Shift+Tab did not remove one indentation level from selected lines");
+
+    mounted.adapter.editor.setValue("    one\ntwo\nthree");
+    mounted.adapter.editor.setSelection(
+        mounted.adapter.editor.view.state.selection.constructor.single(4, 4),
+    );
+    var cursorShiftTab = dispatchKey(
+        mounted.adapter.editor.view,
+        "Tab",
+        {shiftKey: true},
+    );
+    assert.strictEqual(cursorShiftTab.defaultPrevented, true,
+        "Shift+Tab was not captured without a selection");
+    assert.strictEqual(mounted.adapter.getValue(), "one\ntwo\nthree",
+        "Shift+Tab did not dedent the current line without a selection");
+
+    mounted.adapter.editor.setValue("one");
+    mounted.adapter.editor.setSelection(
+        mounted.adapter.editor.view.state.selection.constructor.single(1, 1),
+    );
+    dispatchKey(mounted.adapter.editor.view, "Tab", {shiftKey: true});
+    assert.strictEqual(mounted.adapter.getValue(), "one",
+        "Shift+Tab changed a line with no leading spaces");
 
     mounted.destroy();
     dom.window.close();

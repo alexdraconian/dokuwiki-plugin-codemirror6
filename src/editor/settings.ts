@@ -21,6 +21,7 @@ import {
 } from "@codemirror/commands";
 import {
     bracketMatching,
+    indentUnit,
 } from "@codemirror/language";
 import {
     searchKeymap,
@@ -270,10 +271,14 @@ function themeExtensions(values: DokuWikiSettingValues): Extension {
 }
 
 function applyTabSize(editor: EditorController, value: string): void {
+    const size = Number(value);
     editor.view.contentDOM.style.tabSize = value;
     editor.reconfigure(
         editor.compartments.tabSize,
-        EditorState.tabSize.of(Number(value)),
+        [
+            EditorState.tabSize.of(size),
+            indentUnit.of(" ".repeat(size)),
+        ],
     );
 }
 
