@@ -41,6 +41,7 @@ import {
     createEditorSettings,
     dokuWikiFontSizes,
     dokuWikiKeymapNames,
+    dokuWikiTabSizes,
     dokuWikiSettingDefinitions,
     dokuWikiSettingMenuOrder,
     dokuWikiSettingNames,
@@ -113,6 +114,7 @@ export interface Cm6Runtime {
     readonly dokuWikiSettingDefinitions: typeof dokuWikiSettingDefinitions;
     readonly dokuWikiSettingMenuOrder: typeof dokuWikiSettingMenuOrder;
     readonly dokuWikiFontSizes: typeof dokuWikiFontSizes;
+    readonly dokuWikiTabSizes: typeof dokuWikiTabSizes;
     readonly dokuWikiKeymapNames: typeof dokuWikiKeymapNames;
     readonly scanEmbeddedCodeBlocks: typeof scanEmbeddedCodeBlocks;
     readonly createDokuWikiParserWithEmbeddedRegistry: (
@@ -214,6 +216,7 @@ export function createCm6Runtime(options: Cm6RuntimeOptions = {}): Cm6Runtime {
         dokuWikiSettingDefinitions,
         dokuWikiSettingMenuOrder,
         dokuWikiFontSizes,
+        dokuWikiTabSizes,
         dokuWikiKeymapNames,
         createEmbeddedLanguageRegistry,
         createEmbeddedLanguageHighlighting,
@@ -308,6 +311,7 @@ export {
     createEditorSettings,
     dokuWikiFontSizes,
     dokuWikiKeymapNames,
+    dokuWikiTabSizes,
     dokuWikiSettingDefinitions,
     dokuWikiSettingMenuOrder,
     dokuWikiSettingNames,

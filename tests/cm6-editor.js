@@ -86,7 +86,7 @@ function testMountInputSubmitDestroyRecreate() {
     assert.ok(adapter.host.querySelector(".cm-editor"));
     assert.strictEqual(adapter.host.style.height, "200px");
     assert.strictEqual(adapter.editor.view.state.doc.toString(), textarea.value);
-    assert.strictEqual(adapter.editor.view.state.tabSize, 8);
+    assert.strictEqual(adapter.editor.view.state.tabSize, 2);
     assert.strictEqual(adapter.editor.view.lineWrapping, false);
     assert.strictEqual(adapter.host.querySelectorAll(".cm-line span").length, 0);
     assert.strictEqual(addSubmitListeners, 1);

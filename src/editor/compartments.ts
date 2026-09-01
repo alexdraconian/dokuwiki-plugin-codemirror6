@@ -25,6 +25,7 @@ export interface EditorCompartments {
     readonly behavior: Compartment;
     readonly display: Compartment;
     readonly theme: Compartment;
+    readonly tabSize: Compartment;
     readonly keymap: Compartment;
     readonly scrollbar: Compartment;
 }
@@ -39,6 +40,7 @@ export function createEditorCompartments(): EditorCompartments {
         behavior: new Compartment(),
         display: new Compartment(),
         theme: new Compartment(),
+        tabSize: new Compartment(),
         keymap: new Compartment(),
         scrollbar: new Compartment(),
     };

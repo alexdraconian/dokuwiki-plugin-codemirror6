@@ -26,6 +26,7 @@ import {
     searchKeymap,
 } from "@codemirror/search";
 import {
+    EditorState,
     type Extension,
 } from "@codemirror/state";
 import {
@@ -61,7 +62,7 @@ export type DokuWikiBooleanSetting =
     | "showinvisibles"
     | "syntax";
 
-export type DokuWikiChoiceSetting = "fontsize" | "keymap" | "theme";
+export type DokuWikiChoiceSetting = "fontsize" | "keymap" | "tabsize" | "theme";
 export type DokuWikiSettingName =
     | DokuWikiBooleanSetting
     | DokuWikiChoiceSetting;
@@ -76,12 +77,14 @@ export const dokuWikiSettingNames: readonly DokuWikiSettingName[] = [
     "nativeeditor",
     "syntax",
     "showinvisibles",
+    "tabsize",
     "theme",
 ];
 
 export const dokuWikiSettingMenuOrder: readonly (DokuWikiSettingName | "-")[] = [
     "theme",
     "fontsize",
+    "tabsize",
     "keymap",
     "closebrackets",
     "linenumbers",
@@ -95,6 +98,10 @@ export const dokuWikiSettingMenuOrder: readonly (DokuWikiSettingName | "-")[] = 
 
 export const dokuWikiFontSizes = [
     "10", "11", "12", "13", "14", "16", "18", "20", "24",
+] as const;
+
+export const dokuWikiTabSizes = [
+    "1", "2", "3", "4", "5", "6", "7", "8",
 ] as const;
 
 export type DokuWikiKeymapName = "default" | "emacs" | "sublime" | "vim";
@@ -131,6 +138,7 @@ const settingDefinitions: Readonly<
     },
     syntax: {defaultValue: "1", choices: booleanChoices},
     showinvisibles: {defaultValue: "0", choices: booleanChoices},
+    tabsize: {defaultValue: "2", choices: dokuWikiTabSizes},
     theme: {defaultValue: "default", choices: dokuWikiThemeNames},
 };
 
@@ -261,6 +269,14 @@ function themeExtensions(values: DokuWikiSettingValues): Extension {
     ];
 }
 
+function applyTabSize(editor: EditorController, value: string): void {
+    editor.view.contentDOM.style.tabSize = value;
+    editor.reconfigure(
+        editor.compartments.tabSize,
+        EditorState.tabSize.of(Number(value)),
+    );
+}
+
 function emit(
     listeners: Set<(change: EditorSettingsChange) => void>,
     change: EditorSettingsChange,
@@ -290,6 +306,7 @@ export function createEditorSettings(
         editor.reconfigure(editor.compartments.display, displayExtensions(values));
         editor.reconfigure(editor.compartments.behavior, behaviorExtensions(values));
         editor.reconfigure(editor.compartments.theme, themeExtensions(values));
+        applyTabSize(editor, values.tabsize);
         editor.reconfigure(
             editor.compartments.scrollbar,
             dokuWikiScrollbar(Boolean(config.usenativescroll)),
@@ -410,6 +427,7 @@ const settingLabels: Record<DokuWikiSettingName, string> = {
     nativeeditor: "Native DokuWiki editor",
     syntax: "Highlight syntax",
     showinvisibles: "Show Whitespace",
+    tabsize: "Indentation spaces",
     theme: "Color theme",
 };
 

@@ -142,7 +142,7 @@ export function mountTextArea(options: TextareaAdapterOptions): TextareaAdapter 
             selection: selectionFromTextarea(textarea),
             lineWrapping: options.lineWrapping ?? textarea.wrap !== "off",
             readOnly: options.readOnly ?? textarea.readOnly,
-            tabSize: options.tabSize ?? 8,
+            tabSize: options.tabSize ?? 2,
             extensions: [
                 options.extensions ?? [],
                 options.onChange ? EditorView.updateListener.of((update) => {

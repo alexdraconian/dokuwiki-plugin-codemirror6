@@ -10,3 +10,4 @@ $lang['js']['setting_matchbrackets'] = '일치하는 괄호 강조';
 $lang['js']['setting_nativeeditor'] = '네이티브 도쿠위키 편집기';
 $lang['js']['setting_syntax'] = '문법 강조';
 $lang['js']['setting_theme'] = '색상 테마';
+$lang['js']['setting_tabsize'] = '들여쓰기 공백 수';

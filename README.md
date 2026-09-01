@@ -28,6 +28,7 @@ MathJax.Hub.Config({
 - Moved the complete 159-entry `codeModes` language metadata and aliases into an explicit registry. The initial editor bundle is self-contained; larger embedded language implementations are loaded as same-origin optional chunks with deterministic fallback and retry behavior.
 - Replaced `CodeMirror.runMode()` read-only highlighting with a one-shot CodeMirror 6 highlighter for `pre.code` blocks. Rendering is text-node based, idempotent, and safe for HTML-like or script-like source text.
 - Rebuilt settings around CodeMirror 6 compartments. Existing `cm-*` cookies, font size, themes, keymaps, brackets, line numbers, active line, invisibles, syntax highlighting, and native-editor switching are retained.
+- The editor captures `Tab` before browser focus navigation, inserts spaces instead of tab characters, and indents selected lines. The number of spaces is configurable in the settings menu and defaults to 2.
 - Added CodeMirror 6 page-name autocomplete to the editor, using the configured DokuWiki page list and preserving page IDs and titles in the completion UI. It uses ajax to bring page IDs from server, respecting page's ACL permissions.
 - Added document-wide CodeMirror search and replace. `Ctrl+F` opens the editor search panel, which searches the full document; regular expressions, case sensitivity, whole-word matching, next/previous navigation, and replacement are supported.
 - Replaced the old Grunt/CodeMirror 5 production build with TypeScript, esbuild, and Less.

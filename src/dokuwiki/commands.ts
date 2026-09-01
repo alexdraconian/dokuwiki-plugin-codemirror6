@@ -10,7 +10,7 @@
  * Licensed under the GNU General Public License, version 2 or later.
  * See LICENSE in the project root.
  */
-import {Prec, type EditorState, type Extension} from "@codemirror/state";
+import {EditorState, Prec, type Extension} from "@codemirror/state";
 import type { KeyBinding } from "@codemirror/view";
 import { keymap, type EditorView } from "@codemirror/view";
 
@@ -20,6 +20,50 @@ export type IsOuterMode = (
     state: EditorState,
     position: number,
 ) => boolean;
+
+function selectedLineStarts(state: EditorState): number[] {
+    const lineNumbers = new Set<number>();
+    for (const range of state.selection.ranges) {
+        if (range.empty) {
+            continue;
+        }
+        for (let position = range.from; position <= range.to;) {
+            const line = state.doc.lineAt(position);
+            if (range.to > line.from) {
+                lineNumbers.add(line.number);
+            }
+            if (line.to >= range.to || line.to === state.doc.length) {
+                break;
+            }
+            position = line.to + 1;
+        }
+    }
+    return Array.from(lineNumbers).sort((left, right) => left - right).map(
+        (lineNumber) => state.doc.line(lineNumber).from,
+    );
+}
+
+function insertSpacesOrIndent(view: EditorView): boolean {
+    const {state} = view;
+    if (state.readOnly) {
+        return false;
+    }
+    const spaces = " ".repeat(state.facet(EditorState.tabSize));
+    const lineStarts = selectedLineStarts(state);
+    if (lineStarts.length) {
+        view.dispatch({
+            changes: lineStarts.map((from) => ({from, insert: spaces})),
+            userEvent: "input.indent",
+        });
+        return true;
+    }
+    view.dispatch({
+        ...state.replaceSelection(spaces),
+        scrollIntoView: true,
+        userEvent: "input",
+    });
+    return true;
+}
 
 function indentCommand(
     view: EditorView,
@@ -91,6 +135,11 @@ export function createDokuWikiKeymap(
     isOuterMode: IsOuterMode = () => true,
 ): Extension {
     const bindings: KeyBinding[] = [
+        {
+            key: "Tab",
+            run: insertSpacesOrIndent,
+            preventDefault: true,
+        },
         {
             key: "Enter",
             run: (view) => runDokuWikiIndentCommand(view, "Enter", isOuterMode),

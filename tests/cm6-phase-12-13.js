@@ -127,6 +127,7 @@ async function testSettingsAndMenu() {
         "cm-fontsize": "99",
         "cm-linenumbers": "invalid",
         "cm-nativeeditor": "invalid",
+        "cm-tabsize": "invalid",
     });
     var editor = runtime.createEditor({parent: host, doc: "one\ntwo"});
     var settings = runtime.createEditorSettings(editor, {
@@ -150,8 +151,10 @@ async function testSettingsAndMenu() {
     assert.strictEqual(settings.get("fontsize"), "14");
     assert.strictEqual(settings.get("linenumbers"), "0");
     assert.strictEqual(settings.get("nativeeditor"), "1");
+    assert.strictEqual(settings.get("tabsize"), "2");
     assert.strictEqual(cookies.values.get("cm-fontsize"), "14");
     assert.strictEqual(cookies.values.get("cm-nativeeditor"), "1");
+    assert.strictEqual(cookies.values.get("cm-tabsize"), "2");
     assert.strictEqual(runtime.dokuWikiThemeNames.length, 47);
     assert.strictEqual(runtime.dokuWikiKeymapNames.length, 4);
 
@@ -211,6 +214,10 @@ async function testSettingsAndMenu() {
     var themeSubmenu = menu.menu.querySelector("ul.cm-settings-submenu");
     assert.ok(themeGroup, "theme setting did not create a nested submenu");
     assert.ok(themeSubmenu, "nested settings submenu was not rendered");
+    assert.ok(menu.menu.querySelector("button[data-submenu=tabsize]"),
+        "tab size setting did not create a nested submenu");
+    assert.ok(menu.menu.querySelector("button[data-setting=tabsize][data-choice=2]"),
+        "default tab size choice was not rendered");
     assert.strictEqual(themeGroup.getAttribute("aria-haspopup"), "menu");
     assert.strictEqual(themeSubmenu.hidden, true);
     menu.button.click();
@@ -235,6 +242,50 @@ async function testSettingsAndMenu() {
     menu.destroy();
     settings.dispose();
     editor.destroy();
+    dom.window.close();
+}
+
+async function testTabIndentation() {
+    var dom = new JSDOM(
+        "<!doctype html><form id=\"edit\"><textarea id=\"wiki__text\">" +
+        "alpha</textarea><button id=\"edbtn__save\"></button></form>",
+        {pretendToBeVisual: true},
+    );
+    var runtime = loadRuntime(dom.window);
+    var textarea = dom.window.document.getElementById("wiki__text");
+    var mounted = runtime.mountDokuWikiEditor({
+        window: dom.window,
+        textarea: textarea,
+        tabSize: 2,
+        settings: {
+            config: {nativeeditor: false},
+        },
+    });
+    await mounted.settings.ready;
+    assert.strictEqual(mounted.settings.get("tabsize"), "2");
+    assert.strictEqual(mounted.adapter.editor.view.state.tabSize, 2);
+
+    mounted.adapter.editor.setSelection(
+        mounted.adapter.editor.view.state.selection.constructor.single(2, 2),
+    );
+    var cursorEvent = dispatchKey(mounted.adapter.editor.view, "Tab");
+    assert.strictEqual(cursorEvent.defaultPrevented, true,
+        "Tab was not captured by the CodeMirror keymap");
+    assert.strictEqual(mounted.adapter.getValue(), "al  pha",
+        "Tab did not insert spaces at the cursor");
+
+    await mounted.settings.set("tabsize", "4");
+    assert.strictEqual(mounted.adapter.editor.view.state.tabSize, 4);
+    assert.strictEqual(mounted.adapter.host.querySelector(".cm-content").style.tabSize, "4");
+    mounted.adapter.editor.setValue("one\ntwo\nthree");
+    mounted.adapter.editor.setSelection(
+        mounted.adapter.editor.view.state.selection.constructor.single(0, 7),
+    );
+    dispatchKey(mounted.adapter.editor.view, "Tab");
+    assert.strictEqual(mounted.adapter.getValue(), "    one\n    two\nthree",
+        "Tab did not indent every selected line with spaces");
+
+    mounted.destroy();
     dom.window.close();
 }
 
@@ -279,6 +330,7 @@ async function testOfficialCm6Keymaps() {
 
 Promise.resolve().then(testStaticHighlighting)
     .then(testSettingsAndMenu)
+    .then(testTabIndentation)
     .then(testOfficialCm6Keymaps)
     .then(function() {
         console.log("CM6 phase 12/13 and official keymap verification passed");

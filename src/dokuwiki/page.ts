@@ -116,6 +116,7 @@ function pageLabels(
         "nativeeditor",
         "syntax",
         "showinvisibles",
+        "tabsize",
         "theme",
     ] as const) {
         const label = labels[`setting_${name}`];
@@ -242,7 +243,7 @@ function mountEditor(
         autoHeight: config.autoheight,
         lineWrapping: textarea.wrap !== "off",
         readOnly: textarea.readOnly,
-        tabSize: 8,
+        tabSize: 2,
         syncOnSubmit: () => !nativeMode,
         lockTimer: dokuWindow.dw_locktimer,
         isActive: () => !nativeMode,

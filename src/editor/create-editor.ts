@@ -57,7 +57,7 @@ export interface EditorController {
 }
 
 function validTabSize(value: number | undefined): number {
-    return Number.isInteger(value) && (value as number) > 0 ? value as number : 8;
+    return Number.isInteger(value) && (value as number) > 0 ? value as number : 2;
 }
 
 function clamp(value: number, length: number): number {
@@ -108,7 +108,7 @@ export function createEditor(options: CreateEditorOptions): EditorController {
             EditorState.allowMultipleSelections.of(
                 options.allowMultipleSelections ?? true,
             ),
-            EditorState.tabSize.of(tabSize),
+            compartments.tabSize.of(EditorState.tabSize.of(tabSize)),
             compartments.language.of([]),
             compartments.layout.of(layout(lineWrapping)),
             compartments.editability.of(editability(readOnly)),
