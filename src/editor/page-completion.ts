@@ -12,12 +12,15 @@
  */
 import {
     autocompletion,
+    completionKeymap,
+    startCompletion,
     CompletionContext,
     type Completion,
     type CompletionResult,
     type CompletionSource,
 } from "@codemirror/autocomplete";
-import type {Extension} from "@codemirror/state";
+import {Prec, type Extension} from "@codemirror/state";
+import {keymap} from "@codemirror/view";
 import type {DokuWikiPage} from "../dokuwiki/config";
 
 export type {DokuWikiPage} from "../dokuwiki/config";
@@ -166,11 +169,24 @@ export function createDokuWikiPageCompletionSource(
             controller = null;
         }
 
-        if (!endpoint || fetcher === null) {
+        if (!context.explicit || context.aborted || !endpoint || fetcher === null) {
             return Promise.resolve(null);
         }
 
         return new Promise((resolve) => {
+            context.addEventListener("abort", () => {
+                if (requestId === requestSerial) {
+                    requestSerial += 1;
+                    if (timer !== null) {
+                        clearTimeout(timer);
+                        timer = null;
+                    }
+                    pendingResolve = null;
+                    controller?.abort();
+                    controller = null;
+                }
+                resolve(null);
+            }, {onDocChange: true});
             pendingResolve = resolve;
             timer = setTimeout(() => {
                 timer = null;
@@ -235,10 +251,18 @@ export function createDokuWikiPageCompletion(
         return [];
     }
 
-    return autocompletion({
-        activateOnTyping: false,
-        override: [createDokuWikiPageCompletionSource(options)],
-        optionClass: (completion) => completion.type === "text" ?
-            pageCompletionOptionClass : "",
-    });
+    return [
+        autocompletion({
+            activateOnTyping: false,
+            defaultKeymap: false,
+            override: [createDokuWikiPageCompletionSource(options)],
+            optionClass: (completion) => completion.type === "text" ?
+                pageCompletionOptionClass : "",
+        }),
+        // Keep navigation and acceptance, but omit CM6's alternate macOS
+        // start shortcuts (Alt-` and Alt-i).
+        Prec.highest(keymap.of(completionKeymap.filter((binding) => (
+            binding.run !== startCompletion || binding.key === "Ctrl-Space"
+        )))),
+    ];
 }

@@ -208,6 +208,7 @@ function mountEditor(
     embeddedHighlighting = createEmbeddedLanguageHighlighting(
         registry,
         refreshDokuWikiParser,
+        parserConfig,
     );
     const syntaxExtension = [
         createDokuWikiLanguage(parserConfig),

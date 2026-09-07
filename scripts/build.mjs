@@ -93,9 +93,9 @@ async function buildOnce() {
 async function watchBuild() {
     await prepareOutput();
     const context = await esbuild.context(jsOptions);
-    await context.rebuild();
-    await buildStyles();
-    await context.watch();
+    const languageContext = await esbuild.context(languageOptions);
+    await Promise.all([context.rebuild(), languageContext.rebuild(), buildStyles()]);
+    await Promise.all([context.watch(), languageContext.watch()]);
 
     let cssTimer;
     const cssWatcher = watch(path.dirname(cssEntry), { recursive: true }, () => {
@@ -118,7 +118,7 @@ async function watchBuild() {
             stopped = true;
             clearTimeout(cssTimer);
             cssWatcher.close();
-            await context.dispose();
+            await Promise.all([context.dispose(), languageContext.dispose()]);
             resolve();
         };
 

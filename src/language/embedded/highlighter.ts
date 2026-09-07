@@ -19,6 +19,7 @@ import {
 import {
     ensureSyntaxTree,
     StreamLanguage,
+    StringStream,
     syntaxTree,
     type StreamParser,
 } from "@codemirror/language";
@@ -35,6 +36,9 @@ import {
 } from "@codemirror/view";
 
 import type {EmbeddedLanguageLoadResult, EmbeddedLanguageRegistry} from "./language-registry";
+import {createDokuWikiParser, type DokuWikiParserConfig} from "../dokuwiki/stream-parser";
+import {copyDokuWikiState} from "../dokuwiki/state";
+import type {DokuWikiParserState} from "../dokuwiki/token-types";
 
 export interface EmbeddedCodeBlock {
     readonly closed: boolean;
@@ -61,6 +65,7 @@ interface IndexedEmbeddedCodeBlock {
     readonly block: EmbeddedCodeBlock;
     readonly openFrom: number;
     readonly after: number;
+    readonly afterState: DokuWikiParserState;
 }
 
 interface CachedEmbeddedBlock {
@@ -72,31 +77,66 @@ interface CachedEmbeddedBlock {
 function scanIndexedEmbeddedCodeBlocks(
     source: string,
     start = 0,
+    config: Partial<DokuWikiParserConfig> = {},
+    initialState?: DokuWikiParserState,
 ): readonly IndexedEmbeddedCodeBlock[] {
     const blocks: IndexedEmbeddedCodeBlock[] = [];
-    const opener = /<(code|file)(?=\s|>)([^>]*)>/g;
-    opener.lastIndex = Math.max(0, Math.min(source.length, start));
-    let match: RegExpExecArray | null;
-    while ((match = opener.exec(source))) {
-        const kind = match[1] as "code" | "file";
-        const params = match[2].trim().split(/\s+/).filter(Boolean);
-        const closeTag = `</${kind}>`;
-        const from = match.index + match[0].length;
-        const close = source.indexOf(closeTag, from);
-        const after = close === -1 ? source.length : close + closeTag.length;
+    // Use the same syntax modes as the editor, without loading providers.
+    // In code/file bodies only '<' can begin the closing boundary, so skip
+    // ordinary body text in one token even for very long code lines.
+    const parser = createDokuWikiParser({
+        ...config,
+        loadEmbeddedMode: () => ({token(stream) {
+            if (state.current.name === "code" || state.current.name === "file") {
+                if (stream.match(/^[^<]+/)) return null;
+            }
+            stream.next();
+            return null;
+        }}),
+    });
+    const state = initialState ? copyDokuWikiState(initialState) : parser.startState!(4);
+    let pending: {kind: "code" | "file"; openFrom: number; from?: number} | null = null;
+    let offset = start === 0 ? 0 : source.lastIndexOf("\n", start - 1) + 1;
+    for (const line of source.slice(offset).split("\n")) {
+        const stream = new StringStream(line, 4, 2);
+        stream.pos = Math.max(0, start - offset);
+        if (!line.length) parser.blankLine?.(state, 4);
+        while (!stream.eol()) {
+            stream.start = stream.pos;
+            parser.token(stream, state);
+            const kind = state.current.name;
+            if ((kind === "code" || kind === "file") &&
+                !state.innerMode && !state.exit && stream.current() === `<${kind}`) {
+                pending = {kind, openFrom: offset + stream.start};
+            } else if (pending && pending.from === undefined && state.innerMode) {
+                pending.from = offset + stream.pos;
+            } else if (pending && pending.from !== undefined && state.exit) {
+                addBlock(pending, offset + stream.start, offset + stream.pos, true);
+                pending = null;
+            }
+            // Some parser transitions consume no text, but set state.exit.
+            if (stream.pos === stream.start && !state.exit) stream.next();
+        }
+        offset += line.length + 1;
+    }
+    if (pending && pending.from !== undefined) {
+        addBlock(pending, source.length, source.length, false);
+    }
+
+    function addBlock(
+        entry: {kind: "code" | "file"; openFrom: number; from?: number},
+        to: number, after: number, closed: boolean,
+    ): void {
+        const from = entry.from!;
+        const params = source.slice(entry.openFrom + entry.kind.length + 1, from - 1)
+            .trim().split(/\s+/).filter(Boolean);
         blocks.push({
-            block: {
-                closed: close !== -1,
-                filename: params[1] ?? null,
-                from,
-                kind,
-                lang: params[0] ?? "text",
-                to: close === -1 ? source.length : close,
-            },
-            openFrom: match.index,
+            block: {closed, filename: params[1] ?? null, from, kind: entry.kind,
+                lang: params[0] ?? "text", to},
+            openFrom: entry.openFrom,
             after,
+            afterState: copyDokuWikiState(state),
         });
-        opener.lastIndex = after;
     }
     return blocks;
 }
@@ -106,8 +146,11 @@ function scanIndexedEmbeddedCodeBlocks(
  * embedded provider receives the resulting body range and cannot consume the
  * closing tag or the following document text.
  */
-export function scanEmbeddedCodeBlocks(source: string): readonly EmbeddedCodeBlock[] {
-    return scanIndexedEmbeddedCodeBlocks(source).map(({block}) => block);
+export function scanEmbeddedCodeBlocks(
+    source: string,
+    config: Partial<DokuWikiParserConfig> = {},
+): readonly EmbeddedCodeBlock[] {
+    return scanIndexedEmbeddedCodeBlocks(source, 0, config).map(({block}) => block);
 }
 
 function collectSpans(
@@ -169,8 +212,9 @@ export async function highlightEmbeddedBlock(
 export async function highlightEmbeddedDocument(
     source: string,
     registry: EmbeddedLanguageRegistry,
+    config: Partial<DokuWikiParserConfig> = {},
 ): Promise<readonly EmbeddedBlockHighlight[]> {
-    return Promise.all(scanEmbeddedCodeBlocks(source).map((block) => (
+    return Promise.all(scanEmbeddedCodeBlocks(source, config).map((block) => (
         highlightEmbeddedBlock(source, block, registry)
     )));
 }
@@ -222,6 +266,7 @@ const maxCachedEmbeddedBlocks = 128;
 export function createEmbeddedLanguageHighlighting(
     registry: EmbeddedLanguageRegistry,
     onLanguageLoad?: () => void,
+    config: Partial<DokuWikiParserConfig> = {},
 ): Extension {
     const setDecorations = StateEffect.define<DecorationSet>();
     const decorations = StateField.define<DecorationSet>({
@@ -373,7 +418,9 @@ export function createEmbeddedLanguageHighlighting(
             const prefix = start > 0 ? this.indexedBlocks.filter((indexed) => (
                 indexed.after <= start && indexed.after <= source.length
             )) : [];
-            const suffix = scanIndexedEmbeddedCodeBlocks(source, start);
+            const suffix = scanIndexedEmbeddedCodeBlocks(
+                source, start, config, prefix[prefix.length - 1]?.afterState,
+            );
             const indexedBlocks = [...prefix, ...suffix];
             const blocks: EmbeddedBlockHighlight[] = [];
 
