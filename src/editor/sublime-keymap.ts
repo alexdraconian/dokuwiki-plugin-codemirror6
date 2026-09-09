@@ -40,6 +40,7 @@ import {
     transposeChars,
     undo,
 } from "@codemirror/commands";
+import {startCompletion} from "@codemirror/autocomplete";
 import {
     foldAll,
     foldCode,
@@ -226,6 +227,7 @@ const sublimeKeymap: readonly KeyBinding[] = [
     {key: "Mod-h", run: openSearchPanel},
     {key: "F3", run: findNext},
     {key: "Shift-F3", run: findPrevious},
+    {key: "Alt-/", run: startCompletion},
     {key: "Mod-Home", run: cursorDocStart},
     {key: "Mod-End", run: cursorDocEnd},
     {key: "Mod-a", run: selectAll},

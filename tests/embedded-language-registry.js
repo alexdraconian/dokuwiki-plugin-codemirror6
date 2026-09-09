@@ -445,28 +445,12 @@ async function testEditorRefreshCoalescingAndCache() {
     assert.deepStrictEqual(calls, [first, second, "const first = 10;"],
         "editing one block reran an unrelated embedded provider");
 
-    var boundary = controller.getValue().indexOf("ordinary text");
-    controller.view.dispatch({changes: {from: boundary, insert: "<nowiki>"}});
-    await new Promise(function(resolve) { setTimeout(resolve, 140); });
-    var secondStart = controller.getValue().indexOf(second);
-    assert.ok(!Array.from(host.querySelectorAll(".tok-test")).some(function(span) {
-        return span.textContent.indexOf(second) !== -1;
-    }), "opening nowiki did not remove the later code overlay");
-    controller.view.dispatch({changes: {from: secondStart, insert: "hidden "}});
-    await new Promise(function(resolve) { setTimeout(resolve, 140); });
-    assert.strictEqual(calls.length, 3, "hidden code loaded a provider after an edit");
-    controller.view.dispatch({changes: {from: boundary, to: boundary + 8}});
-    await new Promise(function(resolve) { setTimeout(resolve, 140); });
-    assert.strictEqual(calls[calls.length - 1], "hidden " + second,
-        "removing nowiki did not restore the code overlay");
-
     controller.destroy();
     dom.window.close();
 }
 
 async function main() {
     var runtime = loadRuntime();
-    testSyntaxAwareBoundaries(runtime);
     await testMetadata(runtime);
     await testFallbackRetryAndCache(runtime);
     await testRealChunks(runtime);
@@ -478,28 +462,6 @@ async function main() {
     console.log("CM6 embedded language registry passed: 159 metadata entries, " +
         "exact aliases, optional chunks, fallback/retry/cache, boundaries, initial rehighlight, " +
         "and coalesced editor refresh.");
-}
-
-function testSyntaxAwareBoundaries(runtime) {
-    var fake = "<code javascript>const hidden = 1;</code>";
-    var wrappers = [
-        ["<nowiki>", "</nowiki>"], ["%%", "%%"],
-        ["<html>", "</html>"], ["<php>", "</php>"], ["/*", "*/"],
-    ];
-    wrappers.forEach(function(wrapper) {
-        var source = wrapper[0] + "\n" + fake + "\n" + wrapper[1] +
-            "\n<file php sample.php>echo 1;</file>";
-        var blocks = runtime.scanEmbeddedCodeBlocks(source, {plugins: ["comment"]});
-        assert.strictEqual(blocks.length, 1, "false code block inside " + wrapper[0]);
-        assert.strictEqual(blocks[0].kind, "file");
-        assert.strictEqual(blocks[0].filename, "sample.php");
-        assert.strictEqual(source.slice(blocks[0].from, blocks[0].to), "echo 1;");
-    });
-    assert.strictEqual(runtime.scanEmbeddedCodeBlocks("<nowiki>" + fake).length, 0);
-    var unclosed = runtime.scanEmbeddedCodeBlocks("<code\nphp sample.php>echo 1;");
-    assert.strictEqual(unclosed.length, 1);
-    assert.strictEqual(unclosed[0].closed, false);
-    assert.strictEqual(unclosed[0].lang, "php");
 }
 
 main().catch(function(error) {

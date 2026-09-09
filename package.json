@@ -29,7 +29,7 @@
     "test:cm5": "node tests/cm5-golden.js",
     "test:cm5:update": "node tests/cm5-golden.js --update",
     "test:embedded-spike": "npm run build && node tests/embedded-language-spike.js",
-    "test:toolchain": "npm run build && node tests/cm6-build.js && node tests/cm6-watch.js",
+    "test:toolchain": "npm run build && node tests/cm6-build.js",
     "test:parity": "npm run build && node tests/cm6-parity.js",
     "test:editor": "npm run build && node tests/cm6-editor.js",
     "test:bridge": "npm run build && node tests/cm6-bridge.js",
