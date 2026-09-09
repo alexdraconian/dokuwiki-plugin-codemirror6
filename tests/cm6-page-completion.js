@@ -81,6 +81,7 @@ function dispatchKey(view, key, modifiers) {
         cancelable: true,
         ctrlKey: Boolean(modifiers && modifiers.ctrlKey),
         metaKey: Boolean(modifiers && modifiers.metaKey),
+        altKey: Boolean(modifiers && modifiers.altKey),
     });
     view.focus();
     view.contentDOM.dispatchEvent(event);
@@ -176,7 +177,9 @@ async function testCtrlSpaceAndApply(runtime) {
         pretendToBeVisual: true,
     });
     var host = dom.window.document.getElementById("host");
+    var requests = 0;
     var fetch = function() {
+        requests += 1;
         return Promise.resolve(responseFor([responseItems[1]]));
     };
     var editor = runtime.createEditor({
@@ -187,6 +190,14 @@ async function testCtrlSpaceAndApply(runtime) {
         ),
     });
     editor.setSelection(EditorSelection.single(14, 14));
+    var settings = runtime.createEditorSettings(editor);
+    await settings.set("keymap", "sublime");
+    dispatchKey(editor.view, "/", {altKey: true});
+    dispatchKey(editor.view, "i", {altKey: true});
+    dispatchKey(editor.view, "`", {altKey: true});
+    await new Promise(function(resolve) { setTimeout(resolve, 50); });
+    assert.strictEqual(requests, 0,
+        "alternate shortcuts unexpectedly started completion");
     dispatchKey(editor.view, " ", {ctrlKey: true});
     await new Promise(function(resolve) { dom.window.setTimeout(resolve, 100); });
     var popup = host.querySelector(".cm-tooltip-autocomplete");
@@ -199,6 +210,7 @@ async function testCtrlSpaceAndApply(runtime) {
     await new Promise(function(resolve) { dom.window.setTimeout(resolve, 100); });
     dispatchKey(editor.view, "Enter");
     assert.strictEqual(editor.getValue(), "{{page>:guide:install");
+    settings.dispose();
     editor.destroy();
     dom.window.close();
 }

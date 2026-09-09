@@ -12,12 +12,15 @@
  */
 import {
     autocompletion,
+    completionKeymap,
+    startCompletion,
     CompletionContext,
     type Completion,
     type CompletionResult,
     type CompletionSource,
 } from "@codemirror/autocomplete";
-import type {Extension} from "@codemirror/state";
+import {Prec, type Extension} from "@codemirror/state";
+import {keymap} from "@codemirror/view";
 import type {DokuWikiPage} from "../dokuwiki/config";
 
 export type {DokuWikiPage} from "../dokuwiki/config";
@@ -235,10 +238,18 @@ export function createDokuWikiPageCompletion(
         return [];
     }
 
-    return autocompletion({
-        activateOnTyping: false,
-        override: [createDokuWikiPageCompletionSource(options)],
-        optionClass: (completion) => completion.type === "text" ?
-            pageCompletionOptionClass : "",
-    });
+    return [
+        autocompletion({
+            activateOnTyping: false,
+            defaultKeymap: false,
+            override: [createDokuWikiPageCompletionSource(options)],
+            optionClass: (completion) => completion.type === "text" ?
+                pageCompletionOptionClass : "",
+        }),
+        // Keep navigation and acceptance, but omit CM6's alternate macOS
+        // start shortcuts (Alt-` and Alt-i).
+        Prec.highest(keymap.of(completionKeymap.filter((binding) => (
+            binding.run !== startCompletion || binding.key === "Ctrl-Space"
+        )))),
+    ];
 }
