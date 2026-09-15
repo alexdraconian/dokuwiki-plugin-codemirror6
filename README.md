@@ -32,6 +32,7 @@ MathJax.Hub.Config({
 - Added CodeMirror 6 page-name autocomplete to the editor, using the configured DokuWiki page list and preserving page IDs and titles in the completion UI. It uses ajax to bring page IDs from server, respecting page's ACL permissions.
 - Added document-wide CodeMirror search and replace. `Ctrl+F` opens the editor search panel, which searches the full document; regular expressions, case sensitivity, whole-word matching, next/previous navigation, and replacement are supported.
 - Replaced the old Grunt/CodeMirror 5 production build with TypeScript, esbuild, and Less.
+- No more Korean Jamo decomposition on iOS.
 
 ## Installation
 
