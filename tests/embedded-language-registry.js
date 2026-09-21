@@ -19,6 +19,7 @@ var path = require("path");
 var pathToFileURL = require("url").pathToFileURL;
 var vm = require("vm");
 var JSDOM = require("jsdom").JSDOM;
+var StringStream = require("@codemirror/language").StringStream;
 var legacyJavascript = require("@codemirror/legacy-modes/mode/javascript").javascript;
 var legacyStexMath = require("@codemirror/legacy-modes/mode/stex").stexMath;
 
@@ -449,12 +450,56 @@ async function testEditorRefreshCoalescingAndCache() {
     dom.window.close();
 }
 
+async function testEmbeddedStateSnapshots(runtime) {
+    var registry = runtime.createEmbeddedLanguageRegistry({
+        assetBaseUrl: LANGUAGES,
+        importModule: function(asset) { return import(pathToFileURL(asset).href); },
+    });
+    await Promise.all(["html", "css", "javascript"].map(function(lang) {
+        return registry.load(lang);
+    }));
+    function tokens(parser, state, source) {
+        var result = [];
+        source.split("\n").forEach(function(line) {
+            var stream = new StringStream(line, 4, 4);
+            while (!stream.eol()) {
+                stream.start = stream.pos;
+                var style = parser.token(stream, state);
+                assert.ok(stream.pos > stream.start, "tokenizer did not advance");
+                result.push([stream.current(), style]);
+            }
+        });
+        return result;
+    }
+    [
+        ["<HTML>\n<style>\n:root {", "color: red;\n}\n</style>\n</HTML>"],
+        ["<HTML>\n<script>\nfunction example() {", "return 42;\n}\n</script>\n</HTML>"],
+        ["<code css>\n:root {", "color: red;\n}\n</code>"],
+        ["<code javascript>\nfunction example() {", "return 42;\n}\n</code>"],
+    ].forEach(function(parts) {
+        var parser = runtime.createDokuWikiParser(registry.parserCallbacks());
+        var state = parser.startState(4);
+        tokens(parser, state, parts[0]);
+        var saved = parser.copyState(state);
+        var secondSaved = parser.copyState(state);
+        var expected = tokens(parser, state, parts[1]);
+        assert.ok(expected.every(function(token) {
+            return !/(?:error|invalid)/.test(token[1] || "");
+        }), "valid embedded code was marked invalid");
+        assert.deepStrictEqual(tokens(parser, saved, parts[1]), expected,
+            "reparsing a saved state changed token styles: " + parts[0]);
+        assert.deepStrictEqual(tokens(parser, secondSaved, parts[1]), expected,
+            "reparsing mutated another snapshot: " + parts[0]);
+    });
+}
+
 async function main() {
     var runtime = loadRuntime();
     await testMetadata(runtime);
     await testFallbackRetryAndCache(runtime);
     await testRealChunks(runtime);
     await testHtmlMixedProvider();
+    await testEmbeddedStateSnapshots(runtime);
     await testEditorRehighlight();
     await testDokuWikiInitialEmbeddedHighlighting();
     await testDokuWikiInitialMathHighlighting();

@@ -112,6 +112,7 @@ import * as z80 from "@codemirror/legacy-modes/mode/z80";
 import type {StringStream} from "@codemirror/language";
 import type {EmbeddedMode} from "../../dokuwiki/token-types";
 import type {EmbeddedProviderModule} from "../provider-types";
+import {copyEmbeddedModeState} from "../state";
 
 interface HtmlMixedTag {
     name: "script" | "style";
@@ -360,10 +361,6 @@ function backUpClosingTag(
     return style;
 }
 
-function copyModeState(mode: EmbeddedMode, state: unknown): unknown {
-    return mode.copyState ? mode.copyState(state) : state;
-}
-
 function createHtmlMixedMode(): EmbeddedMode {
     const htmlMode = adaptMode(xml.html as unknown as EmbeddedMode);
     const javascriptMode = adaptMode(javascript.javascript as unknown as EmbeddedMode);
@@ -430,10 +427,10 @@ function createHtmlMixedMode(): EmbeddedMode {
         copyState(value): HtmlMixedState {
             const state = value as HtmlMixedState;
             return {
-                htmlState: copyModeState(htmlMode, state.htmlState),
+                htmlState: copyEmbeddedModeState(htmlMode, state.htmlState),
                 localMode: state.localMode,
                 localState: state.localMode
-                    ? copyModeState(state.localMode, state.localState)
+                    ? copyEmbeddedModeState(state.localMode, state.localState)
                     : null,
                 localTag: state.localTag,
                 pendingTag: state.pendingTag ? {...state.pendingTag} : null,

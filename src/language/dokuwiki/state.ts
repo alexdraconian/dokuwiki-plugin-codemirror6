@@ -15,6 +15,7 @@ import type {
     EmbeddedMode,
     SyntaxMode,
 } from "./token-types";
+import {copyEmbeddedModeState} from "../embedded/state";
 
 export function createDokuWikiState(base: SyntaxMode): DokuWikiParserState {
     return {
@@ -35,7 +36,7 @@ export function copyEmbeddedState(
     mode: EmbeddedMode,
     state: unknown,
 ): unknown {
-    return mode.copyState ? mode.copyState(state) : state;
+    return copyEmbeddedModeState(mode, state);
 }
 
 export function copyDokuWikiState(state: DokuWikiParserState): DokuWikiParserState {
