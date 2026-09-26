@@ -26,6 +26,11 @@ var ROOT = path.resolve(__dirname, "..");
 var BUNDLE = path.join(ROOT, "dist", "cm6", "scripts.min.js");
 
 function loadRuntime(window) {
+    // JSDOM has no layout; selection drawing still needs the Range geometry API.
+    window.Range.prototype.getClientRects = function() { return []; };
+    window.Range.prototype.getBoundingClientRect = function() {
+        return new window.DOMRect();
+    };
     window.console = console;
     window.requestAnimationFrame = window.requestAnimationFrame ||
         function(callback) { return window.setTimeout(callback, 0); };

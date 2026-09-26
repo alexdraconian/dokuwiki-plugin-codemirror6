@@ -20,6 +20,7 @@ import {
     type Extension,
 } from "@codemirror/state";
 import {
+    drawSelection,
     EditorView,
     type EditorViewConfig,
 } from "@codemirror/view";
@@ -106,6 +107,7 @@ export function createEditor(options: CreateEditorOptions): EditorController {
         extensions: [
             history(),
             search(),
+            drawSelection(),
             EditorState.allowMultipleSelections.of(
                 options.allowMultipleSelections ?? true,
             ),

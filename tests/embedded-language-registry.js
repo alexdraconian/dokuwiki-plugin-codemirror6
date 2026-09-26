@@ -31,6 +31,13 @@ function read(file) { return fs.readFileSync(file, "utf8"); }
 function plain(value) { return JSON.parse(JSON.stringify(value)); }
 
 function loadRuntime(window) {
+    if (window) {
+        // JSDOM has no layout; provide geometry for the selection drawing layer.
+        window.Range.prototype.getClientRects = function() { return []; };
+        window.Range.prototype.getBoundingClientRect = function() {
+            return new window.DOMRect();
+        };
+    }
     var sandbox = window || {console: console};
     sandbox.console = console;
     vm.createContext(sandbox);
